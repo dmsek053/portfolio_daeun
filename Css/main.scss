@@ -303,15 +303,23 @@ $fontE : 13rem;
     transform: translate(-50%, -50%);
     text-align: center;
 
-    h1{
-      color: $blue;
-    }
-    p{
-      background: linear-gradient(to top, #7dc3f7 25%, transparent 25%);
-    }
+    h1{color: $blue;}
+    p{ background: linear-gradient(to top, #7dc3f7 25%, transparent 25%); }
   }
 
+  &__uiux{
+    display: flex; width: 35%;
+    justify-content: space-between;
+    bottom:10%; right:5%;
+    transform-origin: 100% 0%;
+    transform:rotate(90deg);
+    opacity: .3;
 
+    p{
+      font-size: $fontA;
+      letter-spacing: .5rem;
+    }
+  }
 }
 
 

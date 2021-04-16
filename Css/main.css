@@ -366,4 +366,26 @@
   background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #7dc3f7), color-stop(25%, transparent));
   background: linear-gradient(to top, #7dc3f7 25%, transparent 25%);
 }
+
+.main__uiux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: 10%;
+  right: 5%;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: .3;
+}
+
+.main__uiux p {
+  font-size: 1.6rem;
+  letter-spacing: .5rem;
+}
 /*# sourceMappingURL=main.css.map */
