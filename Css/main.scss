@@ -308,18 +308,44 @@ $fontE : 13rem;
   }
 
   &__uiux{
-    display: flex; width: 35%;
-    justify-content: space-between;
-    bottom:10%; right:5%;
+    bottom:5%; right:5%;
     transform-origin: 100% 0%;
     transform:rotate(90deg);
-    opacity: .3;
 
     p{
-      font-size: $fontA;
+      font-size: 1.3rem;
       letter-spacing: .5rem;
     }
   }
+
+  &__arrowicon{
+    bottom:10%; left:50%;
+    animation: arrowAni .4s alternate infinite;
+  }
+  @keyframes arrowAni{
+    0%{transform:translateY(10px)}
+  }
+
+  &__arrow{
+    display: block;
+    margin: 30px auto;
+    width: 25px;
+    height: 25px;
+    border-top: 1.6px solid $blue;
+    border-left: 1.6px solid $blue;
+    transform: rotate(-135deg);
+    
+
+    &::after{
+      content: '';
+      display: block;
+      width: 1.4px;
+      height: 120px;
+      background-color: $blue;
+      transform: rotate(-45deg) translate(42px, 16px);
+    }
+  }
+
 }
 
 
