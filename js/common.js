@@ -1,4 +1,4 @@
-(function() {
+$(function(){
 
 // burger menu-----------------------------
   var Menu = (function() {
@@ -52,7 +52,13 @@
 // burger menu-----------------------------
 
 
+$(document).ready(function(){
+  $('html').smoothWheel(), {passive: false}
+});
+
+
+
+});
 
 
     
-  }());
