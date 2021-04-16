@@ -11,12 +11,10 @@ ul,li{list-style: none; margin:0; padding:0;}
     color: #333333;
 }
 
-h1{font-size: 7em;}
-h2{font-size: 3em;}
-h3{font-size: 2.5em;}
-p,a{font-size: 2em;}
+h1{font-size: 7rem;}
+h2{font-size: 3rem;}
+h3{font-size: 2.5rem;}
+p,a{font-size: 2rem;}
 
 img{vertical-align: top;}
 a{text-decoration: none;}
-
-
