@@ -1,9 +1,4 @@
 $(function(){
-    $ ( function ( )  {   
-        $ ( "body" ) . niceScroll ( {
-            scrollspeed : 200
-        } ) ; 
-    } ) ;
 
     const slider = document.querySelector('.img__move');
     let isDown = false;

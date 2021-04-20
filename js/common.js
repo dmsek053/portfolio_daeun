@@ -1,5 +1,11 @@
 $(function(){
-
+  $ ( function ( )  {   
+    $ ( "body" ) . niceScroll ( {
+        scrollspeed : 100,
+        mousescrollstep : 30,
+        // hwacceleration :true
+    } ) ; 
+} ) ;
 
 // burger menu-----------------------------
   var Menu = (function() {
