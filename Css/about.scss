@@ -1,0 +1,417 @@
+@import url('./common.css');
+
+
+// color------------------------
+$white: white;
+$gray: #e4e4e4;
+$black: #333333;
+$blue: #008cff;
+// color------------------------
+
+
+// font-size------------------------
+$fontA : 1.6rem;
+$fontB : 2rem;
+$fontC : 3rem;
+$fontD : 7rem;
+$fontE : 13rem;
+// font-size------------------------
+
+
+// 헤더+버거메뉴----------------------------
+@mixin easeOut {
+    transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
+  }
+  
+  @mixin tablet {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  .header {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+  }
+  
+  .burger {
+    position: absolute;
+    z-index: 10;
+    right: 5%;
+    top: 40px;
+    cursor: pointer;
+    transform: rotateY(0);
+  
+    @include easeOut;
+    
+    &__patty {
+      width: 40px;
+      height: 5px;
+      margin: 0 0 7px 0;
+      background: $gray;
+      border-radius: 50px;
+  
+      @include easeOut;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    // transform burger into 'x'
+    &--close {
+      transform: rotate(180deg);
+      transition: .5s;
+      transition-delay: .1s;
+  
+      
+      .burger__patty {
+          border-radius: 50px;
+          transition: .5s;
+  
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(8px, 8px);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(9px, -8px);
+        }
+      }
+    }
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    
+    &--active {
+      visibility: visible;
+    }
+    
+    &__brand,
+    &__list {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      width: 50%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    &__list {
+      background: $white;
+      list-style-type: none;
+      transform: translate3d(0, -100%, 0);
+  
+      @include easeOut;
+      
+      &--active {
+        transform: translate3d(0, 0, 0);
+        transition: .1s;
+      }
+    }
+    
+    &__brand {
+      background: $blue;
+      background-size: contain;
+      @include easeOut;
+      transform: translate3d(0, 100%, 0);
+      
+      &--active {
+        transform: translate3d(0, 0, 0);
+        transition: .5s;
+      }
+    }
+    
+    &__item {
+      transform: translate3d(650px, 0, 0);
+      width:50%;
+      opacity: 0;
+      @include easeOut;
+      
+      &--active {
+        transform: translate3d(0, 0, 0);
+        transition: .5s;
+        opacity: 1;
+      }
+    }
+    
+    &__link {
+      display: inline-block;
+      position: relative;
+      font-size: $fontD;
+      font-weight: bold;
+      color: $black;
+      text-decoration: none;
+      text-align: left;
+      @include easeOut;
+  
+      &:hover{
+        color: $blue;
+        transition: .5s;
+      }
+    }
+  
+    &__nav{
+      &:hover{
+        transform: skew(15deg);
+      }
+    }
+  
+    &__work {
+      font-size: 3rem;
+      font-weight: normal;
+      padding:2px 0;
+      padding-left: 20px;
+  
+      &:hover span{
+        transition:.5s;
+        background: $blue;
+        border: none;
+      }
+  
+      span{
+          display: inline-block;
+          width: 10px; height:10px;
+          border: 1px solid $blue;
+          border-radius: 100%;
+          margin-right: 20px;
+        transition:.5s;
+  
+      }
+    }
+  
+    &__contact{
+        font-size: $fontC;
+        margin-top: 60px;
+        font-weight: 700;
+    }
+  
+    &__infotext{
+        font-size: $fontA;
+    }
+  
+    &__sns{
+        transform: translateY(100px);
+    }
+  
+    
+    // add delay to each menu item
+    @for $x from 1 through 9 {
+      .menu__item:nth-child(#{$x}) {
+        transition-delay: $x * .1s;
+      }
+    }
+  }
+  
+  // responsive tablet view
+  @include tablet {
+   ul.menu__list,
+   div.menu__brand {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  
+     &--active {
+       transform: translate3d(0, 0, 0);
+     }
+   }
+  
+   .menu__list {
+     height: 75vh;
+     transform: translate3d(-100%, 0, 0);
+   }
+  
+   .menu__brand {
+     height: 25vh;
+     transform: translate3d(100%, 0, 0);
+   }
+  }
+  // 헤더+버거메뉴----------------------------
+  
+
+
+//   about main----------------------------------
+.main{
+    &__first{
+        width: 90%; height:100vh;
+        margin:0 auto;
+        position: relative;
+    }
+    &__h1{
+        padding-top: 15%;
+        padding-bottom: 1%;
+        font-weight: bold;
+        p{
+            font-size: $fontD;
+            letter-spacing: -0.4rem;
+            &:nth-of-type(1){ color:$blue}
+        }
+    }
+    &__visual{
+        img{min-height:500px;}
+    }
+
+    &__second{
+        height:120vh;
+        background-image: url(../imgs/work_background.jpg);
+        padding: 0 5%;
+        padding-top: 30%;
+
+        p{
+            letter-spacing: -0.2rem;
+            margin-bottom: 5px;
+            position: relative;
+
+            &:nth-of-type(1){
+                font-size: $fontD;  margin-bottom: 30px;
+
+                &::after{
+                    content: 'WHO AM I';
+                    display: inline-block;
+                    position: absolute;
+                    right:0;
+                    font-weight: bold;
+                    color: $gray;
+                }
+            }
+            &:nth-of-type(3){
+                font-weight: bold; margin-bottom: 30px; ;
+            }
+        }
+    }
+}
+.about{
+    &__third{
+        width: 90%; height:100vh; margin: 0 auto;
+        padding-top: 3%;
+        display: flex; align-items: center;
+        figure{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            &::after{
+                content: '';
+                display: inline-block;
+                width: 90px; height:90px;
+                border: 3px solid $blue; border-radius: 50%;
+                transform-origin: 50% 50%;
+                transform:translateX(-50%);
+                position: absolute; left:22.5%; top:-45px;
+            }
+
+            img{width: 45%;}
+
+            figcaption{
+                width: 45%;
+                letter-spacing: -0.2rem;
+
+                p{
+                    white-space: pre-wrap;
+                    margin: 7px 0;
+                }
+
+                strong{
+                    margin-right: 40px;
+                    white-space: pre-wrap;
+                }
+            }
+        }
+    }
+}
+
+.skills{
+    &__fourth{
+        height: 100vh; margin: 0 auto; width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // icon-background------------------
+        article{
+            &:nth-of-type(1){
+                width: 45%; margin-right: 10%;
+                .skills__contents:nth-of-type(2){ .skills__icon{ background-position: -139px -2px; }}
+                .skills__contents:nth-of-type(3){ .skills__icon{ background-position: -276px -2px; } .skills__text{letter-spacing: 0rem;}}
+            }
+            &:nth-of-type(2){
+                width: 45%;
+                .skills__contents:nth-of-type(1){ .skills__icon{ background-position: -412px -2px; }}
+                .skills__contents:nth-of-type(2){ .skills__icon{ background-position: -549px -2px; }}
+                .skills__contents:nth-of-type(3){ .skills__icon{ background-position: -686px -2px; }}
+            }
+        }
+        // icon-background------------------
+
+    }
+    &__contents{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10%;
+
+        &:last-child{margin-bottom: 0;}
+    }
+    &__icon{
+        display: inline-block;
+        width: 130px; height:130px;
+        background-image: url(../imgs/icon_skills.jpg.png);
+        background-position: -2px -2px;
+    }
+    &__text{
+        letter-spacing: -0.2rem;
+        width: 75%;
+
+        h2{
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: $fontA;
+            white-space: pre-wrap;
+        &:nth-of-type(1){font-weight: bold;}
+        }
+    }
+}
+
+.footer{
+    &__fifth{
+        height: 100vh;
+        background-image: url(../imgs/work_background.jpg);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__circle{
+        width: 400px; height:400px;
+        border: 2px solid $blue;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+
+        p{letter-spacing: -0.2rem; line-height: 1.7;}
+
+        &:nth-of-type(2){
+            background-image: url(../imgs/about_main_visual.jpg);
+
+            p{color: $white; font-weight: bold;}
+        }
+    }
+    &__text{
+        width: 100%;
+        position: absolute;
+        left:50%; top:50%;
+        transform-origin: 50%,50%;
+        transform:translate(-50%, -50%);
+    }
+}
+//   about ----------------------------------------

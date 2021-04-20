@@ -1,5 +1,9 @@
 $(function(){
 
+  $(document).ready(function(){
+    $("html").smoothWheel()
+  });
+
 // burger menu-----------------------------
   var Menu = (function() {
   var burger = document.querySelector('.burger');
@@ -52,9 +56,10 @@ $(function(){
 // burger menu-----------------------------
 
 
-$(document).ready(function(){
-  $('html').smoothWheel(), {passive: false}
-});
+
+
+
+
 
 
 
