@@ -17,6 +17,18 @@ $fontE : 13rem;
 // font-size------------------------
 
 
+// 마우스 커서---------------------------
+#mouse-cursor {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: $blue;
+  border-radius: 999px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 999;
+}
+// 마우스 커서---------------------------
 
 // 헤더+버거메뉴----------------------------
 @mixin easeOut {
@@ -37,11 +49,11 @@ $fontE : 13rem;
 
 .burger {
   position: absolute;
-  z-index: 10;
   right: 5%;
   top: 40px;
   cursor: pointer;
   transform: rotateY(0);
+  z-index: 10;
 
   @include easeOut;
   
@@ -237,6 +249,13 @@ $fontE : 13rem;
 // 헤더+버거메뉴----------------------------
 
 
+// footer -------------------------------------
+
+
+// footer -------------------------------------
+
+
+
 // 메뉴 좌측 contact 원
 .logo {
   width: 400px;
@@ -304,7 +323,7 @@ $fontE : 13rem;
     transform-origin: 50% 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    letter-spacing: -0.2rem;
+    letter-spacing: -0.1rem;
 
     h1{color: $blue;}
     p{ background: linear-gradient(to top, #7dc3f7 25%, transparent 25%); }
@@ -352,17 +371,19 @@ $fontE : 13rem;
 // 메인-------------------------------------
 
 
+
 // section-----------------------------
 .section{
   &__static{
     display: flex;
     justify-content: space-between;
+    align-items:center ;
     padding:30vh 0;
     margin: 0 auto; width: 90%;
     overflow: hidden;
 
     h2{
-      font-size: 6rem;
+      font-size: 5rem;
       line-height: 1;
     }
   }
@@ -372,21 +393,65 @@ $fontE : 13rem;
     white-space: pre-line;
 
     h2{letter-spacing: -0.1rem;}
-
-    span{font-size: $fontC; letter-spacing: -0.1rem;}
-
-    p{ letter-spacing: -0.2rem; }
+    p{ letter-spacing: -0.1rem; color: #808080;}
   }
 
   &__text1{
+    font-size: $fontC; letter-spacing: -0.1rem;
     background: linear-gradient(to top, #7dc2f777 70%, transparent 70%);
   }
 
 
   &__img{
-    width: 70%;
-  }
+    width: 70%; margin-right: 10px;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.01), 0 10px 10px rgba(0, 0, 0, 0.11);  }
 
 }
 // section-----------------------------
+
+
+.c--anim-btn, .c-anim-btn {
+  transition: 0.3s;     
+}
+
+.c--anim-btn {
+  margin-top: 10%;
+  height: 95px;
+  overflow: hidden;
+  width: 95px;
+  border: 1px solid $blue;
+  border-radius: 50px;
+  font-size: $fontA;
+}
+
+.c-anim-btn{
+  margin-top: 1.5rem;  
+  text-decoration: none;
+  text-align: center;
+  display: block;  
+  font-size: $fontA;
+  font-weight: normal;
+  color: $blue;
+  height: 100%;
+}
+.c-anim-btn2{
+  text-align: center;
+  display: block;  
+  font-size: $fontA;
+  font-weight: normal;
+  color: $blue;
+}
+
+.c--anim-btn:hover .c-anim-btn{
+  margin-top: -10rem;
+}
+.c--anim-btn:hover .c-anim-btn2{
+  color: $white;
+}
+
+.c--anim-btn:hover{
+  background:$blue;
+}
+
+
 

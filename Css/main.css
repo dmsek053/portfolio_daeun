@@ -1,4 +1,15 @@
 @import url("./common.css");
+#mouse-cursor {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #008cff;
+  border-radius: 999px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 999;
+}
+
 .header {
   position: fixed;
   z-index: 5;
@@ -7,12 +18,12 @@
 
 .burger {
   position: absolute;
-  z-index: 10;
   right: 5%;
   top: 40px;
   cursor: pointer;
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
+  z-index: 10;
   -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -356,7 +367,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.1rem;
 }
 
 .main__h2 h1 {
@@ -431,6 +442,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30vh 0;
   margin: 0 auto;
   width: 90%;
@@ -438,7 +452,7 @@
 }
 
 .section__static h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 1;
 }
 
@@ -451,21 +465,68 @@
   letter-spacing: -0.1rem;
 }
 
-.section__text span {
-  font-size: 3rem;
-  letter-spacing: -0.1rem;
-}
-
 .section__text p {
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.1rem;
+  color: #808080;
 }
 
 .section__text1 {
+  font-size: 3rem;
+  letter-spacing: -0.1rem;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, #7dc2f777), color-stop(70%, transparent));
   background: linear-gradient(to top, #7dc2f777 70%, transparent 70%);
 }
 
 .section__img {
   width: 70%;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 30px 30px rgba(0, 0, 0, 0.01), 0 10px 10px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 30px 30px rgba(0, 0, 0, 0.01), 0 10px 10px rgba(0, 0, 0, 0.11);
+}
+
+.c--anim-btn, .c-anim-btn {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c--anim-btn {
+  margin-top: 10%;
+  height: 95px;
+  overflow: hidden;
+  width: 95px;
+  border: 1px solid #008cff;
+  border-radius: 50px;
+  font-size: 1.6rem;
+}
+
+.c-anim-btn {
+  margin-top: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #008cff;
+  height: 100%;
+}
+
+.c-anim-btn2 {
+  text-align: center;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #008cff;
+}
+
+.c--anim-btn:hover .c-anim-btn {
+  margin-top: -10rem;
+}
+
+.c--anim-btn:hover .c-anim-btn2 {
+  color: white;
+}
+
+.c--anim-btn:hover {
+  background: #008cff;
 }
 /*# sourceMappingURL=main.css.map */
