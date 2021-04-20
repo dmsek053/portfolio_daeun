@@ -1,8 +1,5 @@
 $(function(){
 
-  $(document).ready(function(){
-    $("html").smoothWheel()
-  });
 
 // burger menu-----------------------------
   var Menu = (function() {

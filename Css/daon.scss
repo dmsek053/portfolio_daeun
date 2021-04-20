@@ -18,6 +18,8 @@ $fontE : 13rem;
 // font-size------------------------
 
 
+
+
 // 헤더+버거메뉴----------------------------
 @mixin easeOut {
     transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
@@ -268,8 +270,8 @@ $fontE : 13rem;
         justify-content: space-around;
 
         article{
-            &:nth-of-type(1){width: 45%;}
-            &:nth-of-type(2){width: 45%;}
+            &:nth-of-type(1){width: 50%;}
+            &:nth-of-type(2){width: 50%;}
         }
 
         p{
@@ -277,26 +279,28 @@ $fontE : 13rem;
         }
     }
     &__contents{
-        display: flex;
-        justify-content: left;
         height:250px;
     }
     &__text{
-        width: 85%;
-        h2{margin-bottom: 20px; font-size: $fontB;}
+        width: 80%; margin: 0 auto;
+        position: relative;
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 10px; height: 10px;
+            border: 1px solid $blue;
+            border-radius: 50%;
+            position: absolute;
+            left:-70px; top:15px;
+        }
+        h2{
+            margin-bottom: 20px; font-size: $fontC;
+        }
         p{white-space: pre-wrap;}
     }
-    &__dot{
-        display: inline-block;
-        width: 15px; height:15px;
-        background: $blue;
-        border-radius: 50%;
-        margin-right: 50px;
-    }
-
     &__color{
         display: inline-block;
-        width: 100px; height:100px;
+        width: 80px; height:80px;
         background: #63b3e8;
         border-radius: 50%;
         margin: 0 10px;
@@ -336,8 +340,8 @@ $fontE : 13rem;
 
 .img{
     &__slide{
-        height: 120vh;
         width: 100%;
+        background-image: url(../imgs/work_background.jpg);
     }
     &__move{
         display: flex;
@@ -356,7 +360,22 @@ $fontE : 13rem;
             transform: scale(1);
         }
 
-        img{margin-left: 5%;}
+        img{margin-left: 5%; height:450px;}
+    }
+
+    &__text{
+        width: 90%;
+        padding-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: -0.2rem;
+
+        div{
+            &:nth-of-type(1){
+                width: 70%;
+            }
+            &:nth-of-type(2){width: 30%;}
+        }
     }
 }
 //   daon ----------------------------------------
