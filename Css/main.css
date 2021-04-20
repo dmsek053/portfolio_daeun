@@ -346,17 +346,17 @@
   color: transparent;
   -webkit-text-stroke: 1px #333333;
   font-weight: bold;
-  font-size: 13rem;
+  font-size: 11rem;
 }
 
 .main__h1 p:nth-of-type(2) {
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
 }
 
 .main__h1 p:nth-of-type(3) {
-  -webkit-transform: translateY(-80px);
-          transform: translateY(-80px);
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
 }
 
 .main__h2 {
