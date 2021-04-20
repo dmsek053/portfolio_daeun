@@ -318,6 +318,7 @@ $fontE : 11rem;
   }
 
   &__h2{
+    width: 90%;
     left:50%; top:60%;
     transform-origin: 50% 50%;
     transform: translate(-50%, -50%);
@@ -325,7 +326,10 @@ $fontE : 11rem;
     letter-spacing: -0.1rem;
 
     h1{color: $blue;}
-    p{ background: linear-gradient(to top, #7dc3f7 25%, transparent 25%); }
+    p{ 
+      display: inline-block;
+      background: linear-gradient(to top, #7dc3f7 25%, transparent 25%);
+    }
   }
 
   &__uiux{
@@ -479,6 +483,8 @@ $fontE : 11rem;
   .c--anim-btn:hover .c-anim-btn{
     margin-top: -11rem;
   }  
-  .mouse-cursor{display: none;}
+}
+@media screen and (max-width: 768px) { 
+  .main__h1 p{font-size: $fontD;}
 }
 // 미디어쿼리------------------------------

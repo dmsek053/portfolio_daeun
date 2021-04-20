@@ -360,6 +360,7 @@
 }
 
 .main__h2 {
+  width: 90%;
   left: 50%;
   top: 60%;
   -webkit-transform-origin: 50% 50%;
@@ -375,6 +376,7 @@
 }
 
 .main__h2 p {
+  display: inline-block;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #7dc3f7), color-stop(25%, transparent));
   background: linear-gradient(to top, #7dc3f7 25%, transparent 25%);
 }
@@ -563,8 +565,11 @@
   .c--anim-btn:hover .c-anim-btn {
     margin-top: -11rem;
   }
-  .mouse-cursor {
-    display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .main__h1 p {
+    font-size: 7rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
