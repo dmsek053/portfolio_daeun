@@ -3,8 +3,8 @@ $(function(){
 // 스크롤 이벤트---------------------------------
 $(function(){   
   $('body').niceScroll({
-    scrollspeed: 200,
-    smoothscroll: true
+    // scrollspeed: 200,
+    // smoothscroll: true
   }); 
 });
 // 스크롤 이벤트---------------------------------
