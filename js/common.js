@@ -87,8 +87,6 @@ function niceScroll(){
     smoothscroll: true
   }); 
 }
-
-
 // 스크롤 이벤트---------------------------------
 
 
