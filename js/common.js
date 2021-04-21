@@ -1,12 +1,12 @@
 $(function(){
 
 // 스크롤 이벤트---------------------------------
-$(function(){   
-  $('body').niceScroll({
-    // scrollspeed: 200,
-    // smoothscroll: true
-  }); 
-});
+// $(function(){   
+//   $('body').niceScroll({
+//     scrollspeed: 150,
+//     smoothscroll: true
+//   }); 
+// });
 // 스크롤 이벤트---------------------------------
 
 // burger menu-----------------------------
