@@ -532,6 +532,9 @@
     padding-top: 30%;
     margin-bottom: 5%;
   }
+  .main__first {
+    width: 80%;
+  }
   .main__second {
     height: 100%;
     padding: 40% 5% 15% 5%;

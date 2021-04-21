@@ -420,6 +420,7 @@ $fontE : 13rem;
 // 미디어쿼리------------------------------
 @media screen and (max-width: 1024px) { 
   .main__h1{padding-top: 30%; margin-bottom: 5%;}
+  .main__first{width: 80%;}
   .main__second{height:100%; padding: 40% 5% 15% 5%;}
   .about__third{
     height:100%; padding: 15% 0;
