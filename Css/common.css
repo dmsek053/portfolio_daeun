@@ -19,9 +19,22 @@ p,a,strong{font-size: 2rem;}
 img{width:100%; vertical-align: top;}
 a{text-decoration: none;}
 
-
+/* 마우스 커서--------------------------- */
+.mouse-cursor {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #008cff;
+    border-radius: 999px;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 999;
+  }
+/* 마우스 커서--------------------------- */
+  
 @media screen and (max-width: 1024px) { 
     *{font-size: 9px;}
+    .mouse-cursor{display: none;}
 }
 @media screen and (max-width: 768px) { 
     *{font-size: 8px;}

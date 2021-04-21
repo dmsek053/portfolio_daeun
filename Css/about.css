@@ -294,15 +294,15 @@
   color: #008cff;
 }
 
-.main__visual img {
-  min-height: 500px;
+.main__visual {
+  width: 100%;
+  height: 85%;
+  background-image: url(../imgs/about_main_visual.jpg);
 }
 
 .main__second {
-  height: 120vh;
   background-image: url(../imgs/work_background.jpg);
-  padding: 0 5%;
-  padding-top: 30%;
+  padding: 20% 5% 15% 5%;
 }
 
 .main__second p {
@@ -384,7 +384,7 @@
 
 .about__third figure figcaption p {
   white-space: pre-wrap;
-  margin: 7px 0;
+  margin: 2% 0;
 }
 
 .about__third figure figcaption strong {
@@ -393,6 +393,7 @@
 }
 
 .skills__fourth {
+  width: 100%;
   height: 100vh;
   margin: 0 auto;
   width: 90%;
@@ -402,42 +403,37 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.skills__fourth article:nth-of-type(1) {
-  width: 45%;
-  margin-right: 10%;
+.skills__fourth article {
+  width: 50%;
 }
 
 .skills__fourth article:nth-of-type(1) .skills__contents:nth-of-type(2) .skills__icon {
-  background-position: -139px -2px;
+  background-position-x: -153px;
 }
 
 .skills__fourth article:nth-of-type(1) .skills__contents:nth-of-type(3) .skills__icon {
-  background-position: -276px -2px;
+  background-position-x: -290px;
 }
 
 .skills__fourth article:nth-of-type(1) .skills__contents:nth-of-type(3) .skills__text {
   letter-spacing: 0rem;
 }
 
-.skills__fourth article:nth-of-type(2) {
-  width: 45%;
-}
-
 .skills__fourth article:nth-of-type(2) .skills__contents:nth-of-type(1) .skills__icon {
-  background-position: -412px -2px;
+  background-position-x: -425px;
 }
 
 .skills__fourth article:nth-of-type(2) .skills__contents:nth-of-type(2) .skills__icon {
-  background-position: -549px -2px;
+  background-position-x: -562px;
 }
 
 .skills__fourth article:nth-of-type(2) .skills__contents:nth-of-type(3) .skills__icon {
-  background-position: -686px -2px;
+  background-position-x: -699px;
 }
 
 .skills__contents {
@@ -459,10 +455,11 @@
 
 .skills__icon {
   display: inline-block;
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   background-image: url(../imgs/icon_skills.jpg.png);
-  background-position: -2px -2px;
+  background-position: -17px -15px;
 }
 
 .skills__text {
@@ -528,5 +525,115 @@
           transform-origin: 50%,50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .main__h1 {
+    padding-top: 30%;
+    margin-bottom: 5%;
+  }
+  .main__second {
+    height: 100%;
+    padding: 40% 5% 15% 5%;
+  }
+  .about__third {
+    height: 100%;
+    padding: 15% 0;
+  }
+  .skills__fourth {
+    height: 100%;
+    padding: 15% 0;
+  }
+  .skills__icon {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #333333;
+  }
+  .skills__text {
+    width: 90%;
+  }
+  .footer__fifth {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 15% 0;
+  }
+  .footer__circle {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+  }
+  .circle1 {
+    margin-right: 50%;
+  }
+  .circle3 {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__third {
+    width: 100%;
+  }
+  .about__third figure {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills__fourth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .skills__fourth article {
+    width: 100%;
+  }
+  .skills__fourth article:nth-of-type(1) {
+    margin-bottom: 10%;
+  }
+  .skills__icon {
+    margin-right: 10%;
+  }
+  .footer__circle {
+    width: 285px;
+    height: 285px;
+    margin: 0 auto;
+  }
+  .circle1 {
+    margin-right: 50%;
+  }
+  .circle3 {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .main__second p:nth-of-type(1)::after {
+    display: none;
+  }
+  .about__third figure figcaption {
+    width: 90%;
+  }
+  .about__third figure img {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+  .skills__icon {
+    display: none;
+  }
+  .skills__text h2 {
+    color: #008cff;
+  }
+  .footer__circle {
+    width: 285px;
+    height: 285px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=about.css.map */

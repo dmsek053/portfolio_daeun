@@ -257,9 +257,6 @@ $fontE : 13rem;
             &:nth-of-type(3){ font-weight: normal; font-size: $fontC; letter-spacing: 0; margin-top: 30px;}
         }
     }
-    &__visual{
-        img{min-height:500px;}
-    }
 
     &__second{
         height:130vh;
@@ -326,7 +323,7 @@ $fontE : 13rem;
 
 .hash{
     &__tag{
-        width:50%; height: 100vh;
+        width:70%; height: 100vh;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -379,3 +376,37 @@ $fontE : 13rem;
     }
 }
 //   daon ----------------------------------------
+
+
+// 미디어쿼리------------------------------
+@media screen and (max-width: 1024px) {
+  .explan__first{
+    height: 100%; margin-bottom: 10%;
+  }
+  .explan__second{
+    height: 100%; padding: 15vh 0;
+    align-items: center;
+  }
+  .explan__color{width: 50px; height:50px;}
+  .explan__text::before{display: none;}
+  .explan__text h2{color: $blue;}
+  .hash__tag{width: 80%; height:70vh;}
+  .hash__tag p{font-size: 4rem;}
+}
+@media screen and (max-width: 768px) {
+  .explan__h1 p{font-size: 5rem;}
+  .explan__second{flex-direction: column;}
+  .explan__second article:nth-of-type(1),
+  .explan__second article:nth-of-type(2){width: 100%;}
+  .explan__text{width: 90%; }
+  .img__move img{height:auto;}
+  .img__text{flex-direction: column; width: 90%; margin:0 auto;}
+  .img__text div:nth-of-type(1),
+  .img__text div:nth-of-type(2){width: 90%;}
+  .explan__contents{width: 100%;}
+}
+@media screen and (max-width: 540px) { 
+  .hash__tag p{font-size: 3rem;}
+}
+
+// 미디어쿼리------------------------------

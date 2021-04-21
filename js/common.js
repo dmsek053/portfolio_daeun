@@ -1,11 +1,14 @@
 $(function(){
-  $ ( function ( )  {   
-    $ ( "body" ) . niceScroll ( {
-        scrollspeed : 100,
-        mousescrollstep : 30,
-        // hwacceleration :true
-    } ) ; 
-} ) ;
+
+// 스크롤 이벤트---------------------------------
+$(function(){   
+  $('body').niceScroll({
+      scrollspeed : 100,
+      mousescrollstep : 30,
+      // hwacceleration :true
+  }); 
+});
+// 스크롤 이벤트---------------------------------
 
 // burger menu-----------------------------
   var Menu = (function() {
@@ -63,7 +66,7 @@ $(function(){
 
 // cursor-------------------------------------------
 const handleMousePos = (e) => {
-  const CURSOR = document.querySelector('#mouse-cursor');
+  const CURSOR = document.querySelector('.mouse-cursor');
   const HOVER = document.querySelectorAll('.cursor-hover');
   const { pageX: posX, pageY: posY } = e;
     const runMouseOver = () => {
@@ -84,9 +87,31 @@ const handleMousePos = (e) => {
       CURSOR.style.top = `${posY - 50}px`  
     );
 };
-
-  document.addEventListener('mousemove', handleMousePos);
 // cursor-------------------------------------------
+
+
+
+// 미디어 쿼리  --------------------------------------------
+function matchEvent(e) {
+  if (e.matches) {
+    document.addEventListener('mousemove', handleMousePos); 
+  } else {
+    document.removeEventListener('mousemove', handleMousePos); 
+  }
+}
+  
+function clickList() {
+  var mq = window.matchMedia('screen and (min-width:1025px)');
+  matchEvent(mq);
+  mq.addListener(matchEvent);
+}
+clickList();
+// 미디어 쿼리  --------------------------------------------
+
+
+
+
+
 
 
 

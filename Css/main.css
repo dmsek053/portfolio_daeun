@@ -1,15 +1,4 @@
 @import url("./common.css");
-#mouse-cursor {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  background: #008cff;
-  border-radius: 999px;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  z-index: 999;
-}
-
 .header {
   position: fixed;
   z-index: 5;
@@ -538,7 +527,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 10vh 0;
+    padding: 15vh 0;
   }
   .section__text {
     display: -webkit-box;
@@ -582,6 +571,12 @@
 @media screen and (max-width: 540px) {
   .section__media1024 h2 {
     font-size: 3.5rem;
+  }
+  .main__h1 p {
+    font-size: 5rem;
+  }
+  .main__h2 {
+    top: 50%;
   }
 }
 /*# sourceMappingURL=main.css.map */
