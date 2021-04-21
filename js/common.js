@@ -3,9 +3,8 @@ $(function(){
 // 스크롤 이벤트---------------------------------
 $(function(){   
   $('body').niceScroll({
-      scrollspeed : 100,
-      mousescrollstep : 30,
-      // hwacceleration :true
+    scrollspeed: 200,
+    smoothscroll: true
   }); 
 });
 // 스크롤 이벤트---------------------------------
@@ -94,7 +93,8 @@ const handleMousePos = (e) => {
 // 미디어 쿼리  --------------------------------------------
 function matchEvent(e) {
   if (e.matches) {
-    document.addEventListener('mousemove', handleMousePos); 
+    document.addEventListener('mousemove', handleMousePos);
+    
   } else {
     document.removeEventListener('mousemove', handleMousePos); 
   }
