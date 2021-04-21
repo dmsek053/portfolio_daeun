@@ -1,13 +1,5 @@
 $(function(){
 
-// 스크롤 이벤트---------------------------------
-// $(function(){   
-//   $('body').niceScroll({
-//     scrollspeed: 150,
-//     smoothscroll: true
-//   }); 
-// });
-// 스크롤 이벤트---------------------------------
 
 // burger menu-----------------------------
   var Menu = (function() {
@@ -88,12 +80,23 @@ const handleMousePos = (e) => {
 };
 // cursor-------------------------------------------
 
+// 스크롤 이벤트---------------------------------
+function niceScroll(){
+  $('body').niceScroll({
+    scrollspeed: 150,
+    smoothscroll: true
+  }); 
+}
+
+
+// 스크롤 이벤트---------------------------------
 
 
 // 미디어 쿼리  --------------------------------------------
 function matchEvent(e) {
   if (e.matches) {
     document.addEventListener('mousemove', handleMousePos);
+    niceScroll();
     
   } else {
     document.removeEventListener('mousemove', handleMousePos); 
