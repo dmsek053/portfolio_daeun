@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1000" height="300" style="border:0px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+
+    <script>
+        var requestId = 0;
+var animationStartTime = 0;
+
+ var canvas = document.getElementById("myCanvas");
+  var context = canvas.getContext("2d");
+
+
+    animationStartTime = window.performance.now();
+  requestId = window.requestAnimationFrame(animate);
+  var i=0;
+  
+  var str="                                   The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.  I can't change the direction of the wind, but I can adjust my sails to always reach my destination. Don't judge each day by the harvest you reap but by the seeds that you plant.  Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.    There are no secrets to success. It is the result of preparation, hard work, and learning from failure.            ";
+
+ context.fillStyle = "white";
+  context.font = "bold 72px Arial";
+  context.fillText(str, i+5, 100);
+  var the_end=context.measureText(str).width;
+
+
+  function animate(time) {
+   context.fillStyle = "white";
+  context.fillRect(0, 0, 1000, 300);
+    context.fillStyle = "black";
+  context.font = "bold 72px Arial";
+  context.fillText(str, i, 100);
+  i=i-2;
+    if (i==-the_end)
+      {
+      i=0;
+      }
+    requestId = window.requestAnimationFrame(animate);
+}
+    </script>
+</body>
+</html>
