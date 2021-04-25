@@ -231,15 +231,50 @@ $spacing : -0.2px;
 
 // 헤더+버거메뉴----------------------------
 
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //   about main----------------------------------
 .bg1{
   position: fixed; z-index: 700; width: 100%; height:100%;
-  background-image: url(../imgs/work_background.jpg);
+  // background-image: url(../imgs/work_background.jpg);
+  background:rgb(241, 249, 255)
 }
 
 .main{
   &__first{
-    width: 100%; position:fixed; z-index: 700;
+    width: 100%; position:fixed; z-index: 900;
   }
 
   &__visual{

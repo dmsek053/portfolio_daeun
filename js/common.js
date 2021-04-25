@@ -55,30 +55,21 @@ $(function(){
 
 
 
-// cursor-------------------------------------------
-const handleMousePos = (e) => {
-  const CURSOR = document.querySelector('.mouse-cursor');
-  const HOVER = document.querySelectorAll('.cursor-hover');
-  const { pageX: posX, pageY: posY } = e;
-    const runMouseOver = () => {
-      CURSOR.style.transform = 'scale(2)';
-      CURSOR.style.transition = '0.1s';
-      CURSOR.style.background = '#ff7300';
-    };
-    HOVER.forEach(hover => hover.addEventListener('mouseenter', runMouseOver));
 
-    const runMouseLeave = () => {
-      CURSOR.style.transform = '';
-      CURSOR.style.background = '';
-    };
-    HOVER.forEach(hover => hover.addEventListener('mouseleave', runMouseLeave));
-    
-    return (
-      CURSOR.style.left = `${posX - 50}px`,
-      CURSOR.style.top = `${posY - 50}px`  
-    );
-};
-// cursor-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 스크롤 이벤트---------------------------------
 function niceScroll(){
@@ -93,11 +84,9 @@ function niceScroll(){
 // 미디어 쿼리  --------------------------------------------
 function matchEvent(e) {
   if (e.matches) {
-    document.addEventListener('mousemove', handleMousePos);
     niceScroll();
     
   } else {
-    document.removeEventListener('mousemove', handleMousePos); 
   }
 }
   
