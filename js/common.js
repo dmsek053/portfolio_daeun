@@ -83,7 +83,7 @@ const handleMousePos = (e) => {
 // 스크롤 이벤트---------------------------------
 function niceScroll(){
   $('body').niceScroll({
-    scrollspeed: 150,
+    scrollspeed: 100,
     smoothscroll: true
   }); 
 }

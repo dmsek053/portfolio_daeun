@@ -232,21 +232,25 @@ $spacing : -0.2px;
 // 헤더+버거메뉴----------------------------
 
 //   about main----------------------------------
+.bg1{
+  position: fixed; z-index: 700; width: 100%; height:100%;
+  background-image: url(../imgs/work_background.jpg);
+}
+
 .main{
   &__first{
-    width: 100%; margin: 0 auto; padding-top: 300px;
-    position:fixed; z-index: 998;
-    background-image: url(../imgs/work_background.jpg);
+    width: 100%; position:fixed; z-index: 700;
   }
 
   &__visual{
-    height: 100vh; width: 80%; margin:0 auto;
+    width: 80%; margin:0 auto;
     p{
       font-size: 6rem; font-weight: normal; line-height: 1.2;
       filter: blur(50px); opacity: 0; font-weight: bold;
       animation: abouttitle 1s .3s forwards;
       @keyframes abouttitle{ 100% {filter: none; opacity: 1;} };
 
+      &:nth-of-type(1){margin-top: 300px;}
       &:nth-of-type(2){
         &::after{
           content: ''; display: inline-block;
@@ -259,7 +263,7 @@ $spacing : -0.2px;
     } 
     span{
       position: absolute; transform: rotate(-90deg);
-      font-size: 3rem; z-index: 900;
+      font-size: 4em; z-index: 700; left:-6%;
     }
 
     canvas{
@@ -267,7 +271,7 @@ $spacing : -0.2px;
       background-image: url(../imgs/about_main_visual2.jpg);
       background-size: contain; width: 80%;
       cursor:  crosshair;
-      position: absolute; top:40%; left:10%; z-index: 888;
+      position: absolute; top:500px; left:10%; z-index: 700;
       cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;  
       animation:  aboutvisual .7s 1.7s forwards;
       @keyframes aboutvisual{ 100% {transform:translateY(0);} };
@@ -275,8 +279,8 @@ $spacing : -0.2px;
   }
 
   &__second{
-    height: 80vh; width:80%; left:10%; bottom:25%;
-    position: absolute;
+   width:80%; bottom:30%;
+    position: fixed;  z-index: 750;
 
     p{
       letter-spacing: $spacing;
@@ -292,7 +296,7 @@ $spacing : -0.2px;
             position: absolute;
             right:0; font-weight: bold;
             color: transparent; font-size: 10rem;
-            -webkit-text-stroke : 1px #008cff4b;
+            -webkit-text-stroke : 1px #008cff;
         }
       }
       &:nth-of-type(2){ font-size: 3rem; strong{font-size: 3rem;}}
@@ -304,59 +308,57 @@ $spacing : -0.2px;
 
 .about{
   &__third{
-    width: 100%; height:100vh; position: fixed; z-index: 950; 
+    width: 100%; height:100%; position: fixed; z-index: 750; 
     background:$white;
+
     h2{
       font-size: 5rem; text-align: center; font-weight: normal; letter-spacing: $spacing;
       position: absolute; top:45%;
     }
   }
 
-  &__introduce{
-    display: flex; align-items: center; border: 1px solid $gray;
-    justify-content: space-between; width: 80%;
-    position: absolute; left:10%; top:15%;
-  }
-
   &__selfie{
-    width: 45%;
-    img{max-height:600px;}
+    position: absolute;
+    transform-origin: 0% 50%; transform: translate(0%,-50%);
+    top:50%;
   }
   
   &__comment{
-    width: 51%;
+    position: absolute; top:50%; left:50%; transform-origin: 0% 50%; transform:translate(0%, -50%);
     li{
       &:nth-of-type(1){margin-bottom: 70px;}
-      h3{font-size: 2.2rem; margin-bottom: 15px; color: $blue;}
+      h3{font-size: 3rem; margin-bottom: 15px; color: $blue;}
       .comment__title{
         font-size: 1.9rem; font-weight: bold;
         margin-right: 15px;
       }
-      span{font-size: 1.9rem; line-height: 1.7; letter-spacing: $spacing;}
+      span{font-size: 2.1rem; line-height: 1.7; letter-spacing: $spacing;}
     }
   }
 }
 
 .skills{
   &__fourth{
-      position: fixed; z-index: 800;
-      display: flex; justify-content: space-between;
-      background: $gray;
+      position: fixed; z-index: 750; width:100%; height:100%;
+      background: $white; 
   }
 
-  &__title{
-    h2{ font-size: 5rem; text-align: left; font-weight: normal; letter-spacing: $spacing;}
+  &__title{ 
+    font-weight: normal; letter-spacing: $spacing;
+    position: absolute; top:25%;
   }
-
-  &__contents{width: 55%;}
+  
+  &__contents{
+    position: absolute; left:50%; top:25%;
+  }
 
   &__text{
-    margin-bottom: 56px; padding-left: 90px;
+    margin-bottom: 30px; padding-left: 90px;
     position: relative;
     &::before{
       content: ''; width: 70px; height:70px; display: inline-block;
       background-image: url(../imgs/skill_icon1.jpg); border-radius: 50%;
-      background-size: contain;
+      background-size: contain;  z-index: 800;
       position: absolute; left:0; top:5px;
     }
     h2{font-size: 2rem; letter-spacing: $spacing; margin-bottom: 8px;}
@@ -366,30 +368,41 @@ $spacing : -0.2px;
 
 .pr{
   &__fifth{
-      height: 100vh;
-      display: flex; align-items: center;
-      overflow: hidden;
+    position: fixed; z-index: 800;
+    width: 100%; height:100vh;
+    background: $gray;
   }
 
   &__text{
-    height: 100vh;
-    background-image: url(../imgs/work_background.jpg);
-    display: flex; align-items: center;
-    span{
+    position: absolute; transform-origin:0% 50%;
+    transform: translate(0%, -50%); top:50%;
+    p{
       font-size: 13rem; font-weight: bold;
-      white-space:nowrap; margin-left: 30px;
+      white-space:nowrap;
       color: transparent; 
       -webkit-text-stroke : 1px $black;
-      &:nth-of-type(2){margin-left: 300px;}
-      &:nth-of-type(3){margin-left: 600px;}
-      &:nth-of-type(4){margin-left: 900px;}
     }
   }
 
   &__inner{
-    width: 100vw; height: 100vh;
-    h2{font-size: 7rem;}
-    p{font-size: 2rem}
+    position: fixed; z-index: 850; transform-origin: 50% 50%;
+    transform: translate(-50%, -50%); top:50%; left:50%;
+    h2{
+      font-size: 7rem; margin-bottom: 10px;
+      &::after{
+        content: ''; display: inline-block;
+        width: 40px; border-bottom: 2px solid $blue;
+        margin-left: 20px;
+        animation:  aboutafter2 1s infinite;
+        @keyframes aboutafter2{ 100% {opacity: 0} };
+      }
+    }
+    p{
+      font-size:3rem;
+      &:nth-of-type(1){
+        margin-bottom:50px;
+      }
+    }
   }
 }
 //   about ----------------------------------------

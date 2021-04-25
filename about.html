@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./Css/about.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.js"></script>
+
     <script src="js/common.js"></script>
     <script src="js/about.js"></script>
     <title>KIMDAEUN</title>
@@ -46,93 +48,89 @@
        
   
 <!-- main------------------------------------ -->
-<main class="wrapper" data-smooth-scrolling="on">
-  <section class="main">
-    <div class="main__first" data-6500="transform: translate(0%,0%)" data-8000="transform: translate(0%,-100%)">
+<main class="wrapper">
+    <div class="bg1"data-0="background-position:0px 0px;"  data-5500="left:0%" data-6500="left:-100%;"></div>
+
+    <div class="main__first">
         <div class="main__visual">
-            <div data-0="opacity:1; transform: translate(0%,0%)" data-500="opacity:0; transform: translate(0%,-100%)">
+            <div data-0="transform:translate(0%,0%); opacity:1" data-100="transform:translate(0%,-10%); opacity:0">
                 <p>I like the</p>
                 <p>Color blue</p>
             </div>
-            <span data-500="top:-100%; left:-30px; display:block" data-3500="top:100%; display:none">CLICK AND DRAG TO DRAW</span>
-            <canvas id="bridge" width="900" height="500"  data-500="top:40%; left:10%" data-1000="top:0; height:100vh; opacity:1" data-3500="display:block" data-4500="left:-100%"></canvas>
-        </div>
-        <div class="main__second" data-5500="opacity:0; transform: translate(0%,10%); " data-6500="opacity:1; transform: translate(0%,0%);">
-            <P>BLUE 💙</P>
-            <P><strong>‘성장하다’</strong>라는 뜻에서 유래한 말.</P>
-            <P>#파랗다 #푸르다 #신뢰 #바다 #하늘</P>
-            <P>안녕하세요.</P>
-            <P>파란색을 좋아하고 파란색과 공통점이 많은 신입 웹 퍼블리셔이자 프론트엔드 개발을 준비하고 있는 김다은입니다.</P>
-            <P><strong>침착,성실,믿음</strong>의 이미지를 가진 파란색처럼 감정에 쉽게 휩쓸리지않고 냉정하게 판단할 수 있는 성격을 가지고 있으며</P>
-            <P>예의 바르고 겸손한 마음으로 매사에 성실하게 임하는 노력파입니다.</P>
+            <span data-100="top:-100%" data-600="top:60%" data-1000="top:60%" data-1500="top:300%">CLICK AND DRAG TO DRAW !</span>
+            <canvas id="bridge" width="900" height="500" data-100="top:500px" data-600="top:0px; height:100vh;" data-1000=" height:100vh;" data-1500="top:-1000px"></canvas>
         </div>
     </div>
 
-    <div class="about__third">
-        <h2 data-8500="left:50%; opacity:0" data-10000=" left:10%; opacity:1" data-11000="opacity:0">저를 소개합니다</h2>
-        <div class="about__introduce">
-            <div class="about__selfie"><img src="./imgs/selfie.jpg" alt=""></div>
-            <ul class="about__comment">
-                <li>
-                    <h3>Kim Daeun</h3>
-                    <span class="comment__title">Tel</span><span>+82 10 8482 9164</span><br>
-                    <span class="comment__title">Email</span><span>dmsek053@naver.com</span>
-                </li>
-                <li>
-                    <h3>Education</h3>
-                    <span class="comment__title">2021</span><span>강남그린컴퓨터학원(웹퍼블리셔 & 프론트엔드 개발자 과정) 수료</span><br>
-                    <span class="comment__title">2013</span><span>대경대학교 졸업</span><br>
-                    <span class="comment__title">2010</span><span>대구제일정보고등학교 졸업</span>
-                </li>
-            </ul>
-        </div>
+    <div class="main__second" data-1500="right:-100%;" data-1510="right:10%; opacity:0; filter:blur(10px)" data-1800="opacity:1; filter:blur(0px)" data-2300="opacity:1; filter:blur(0px); left:10%" data-2800="left:-100%;">
+        <P>BLUE 💙</P>
+        <P><strong>‘성장하다’</strong>라는 뜻에서 유래한 말.</P>
+        <P>#파랗다 #푸르다 #신뢰 #바다 #하늘</P>
+        <P>안녕하세요.</P>
+        <P>파란색을 좋아하고 파란색과 공통점이 많은 신입 웹 퍼블리셔이자 프론트엔드 개발을 준비하고 있는 김다은입니다.</P>
+        <P><strong>침착,성실,믿음</strong>의 이미지를 가진 파란색처럼 감정에 쉽게 휩쓸리지않고 냉정하게 판단할 수 있는 성격을 가지고 있으며</P>
+        <P>예의 바르고 겸손한 마음으로 매사에 성실하게 임하는 노력파입니다.</P>
     </div>
 
-    <div class="skills__fourth" data-15000="transform: translate(0%,0%)" data-end="transform: translate(0%,-100%)">
-        <div class="skills__title"><h2>저는 이런 것을<br>잘할 수 있어요</h2></div>
-        <div class="skills__contents">
-            <div class="skills__text">
+    <div class="about__third" data-5500="right:-100%;" data-6500="right:0%;" data-9800="right:0%;" data-10800="right:100%;">
+        <h2 data-7000="left:40%; opacity:0" data-7500="opacity:1;" data-8000="left:40%;" data-9000="left:-60%;">저를 소개합니다 :)</h2>
+        <div class="about__selfie" data-8000="left:100%" data-9000="left:10%; width:800px; height:800px" data-9500="width:700px; height:700px"><img src="./imgs/selfie.jpg" alt=""></div>
+        <ul class="about__comment" data-9500="opacity:0; filter:blur(10px)" data-9800="opacity:1; filter:blur(0px)">
+            <li>
+                <h3>Kim Daeun</h3>
+                <span class="comment__title">Tel</span><span>+82 10 8482 9164</span><br>
+                <span class="comment__title">Email</span><span>dmsek053@naver.com</span>
+            </li>
+            <li>
+                <h3>Education</h3>
+                <span class="comment__title">2021</span><span>강남그린컴퓨터학원(웹퍼블리셔 & 프론트엔드 개발자 과정) 수료</span><br>
+                <span class="comment__title">2013</span><span>대경대학교 졸업</span><br>
+                <span class="comment__title">2010</span><span>대구제일정보고등학교 졸업</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="skills__fourth" data-9800="left:100%;" data-10800="left:0%;">
+        <h2 class="skills__title" data-9800="font-size:0rem; left:50%" data-10800="font-size:5rem; left:10%"  data-12300="opacity:1" data-12800="opacity:0">저는 이런 것을 잘할 수 있어요</h2>
+        <div class="skills__contents" data-12300="opacity:1" data-12800="opacity:0">
+            <div class="skills__text" data-10800="transform:scale(0); opacity:0" data-10900="transform:scale(1); opacity:1">
                 <h2>HTML5</h2>
                 <p>웹표준과 웹접근성을 항상 고려하여 마크업을 작성합니다.<br>하드 코딩 / 반응형 웹페이지 제작 / 웹 접근성( K-WAH 4.0 , A-CoolCheck )</p>
             </div>
-            <div class="skills__text">
+            <div class="skills__text" data-10800="transform:scale(0); opacity:0" data-11000="transform:scale(1); opacity:1">
                 <h2>CSS3</h2>
                 <p>다양한 스타일, 애니메이션 및 반응형 웹페이지를 구현합니다.<br>반응형 레이아웃  /   SASS를 사용한 프리프로세싱</p>
             </div>
-            <div class="skills__text">
+            <div class="skills__text" data-10800="transform:scale(0); opacity:0"  data-11100="transform:scale(1); opacity:1">
                 <h2>JAVASCRIPT</h2>
                 <p>기본 문법 구조를 이해하고 활용할 수 있습니다.<br>Vanilla Java Script  /   Jquery  /   Ajax    /   Xml /   Json    /   React</p>
             </div>
-            <div class="skills__text">
+            <div class="skills__text" data-10800="transform:scale(0); opacity:0"  data-11200="transform:scale(1); opacity:1">
                 <h2>PHOTOSHOP, ILLUSTRATION</h2>
                 <p>간단한 사진 편집을 할 수 있습니다.<br>포토샵과 일러스트를 활용하여 다양한 디자인이 가능합니다.</p>
             </div>
-            <div class="skills__text">
+            <div class="skills__text" data-10800="transform:scale(0); opacity:0" data-11300="transform:scale(1); opacity:1" >
                 <h2>GitHub, Zeplin, Google Drive</h2>
                 <p>다양한 사람들과 프로젝트 협업이 원활하게 가능합니다.<br>의도를 이해하고 존중하며 '함께' 좋은 결과물을 만들어갑니다.</p>
             </div>
         </div>
     </div>
 
-    <div class="pr__fifth">
-        <div class="pr__text">
-            <div class="pr__comment">
-                <span>협업 잘하는 프로소통러를 찾으시나요?</span>
-                <span>이해심, 배려심있는 웹퍼블리셔가 필요하신가요?</span>
-                <span>원활한 커뮤니케이션이 가능한 사람을 구하시나요?</span>
-                <span>호기심 많고 배우는 것을 좋아하는 사람을 찾으시나요?</span>
-            </div>
+    <div class="pr__fifth" data-11500="top:100%" data-12000="top:0%" data-15500="top:0%" data-16000="top:-100%">
+        <div class="pr__text" data-12000="left:100%" data-16000="left:-250%">
+            <p>협업 잘하는 프로소통러를 찾으시나요?</p>
+            <p data-12500="margin-left:30%" data-16000="margin-left:-10%">이해심, 배려심있는 웹퍼블리셔가 필요하신가요?</p>
+            <p data-12500="margin-left:60%" data-16000="margin-left:-10%">원활한 커뮤니케이션이 가능한 사람을 구하시나요?</p>
+            <p data-12500="margin-left:90%" data-16000="margin-left:-10%">호기심 많고 배우는 것을 좋아하는 사람을 찾으시나요?</p>
         </div>
     </div>
 
-    <div class="pr__inner">
+    <div class="pr__inner" data-16000="opacity:0" data-16500="opacity:1">
         <h2>CONTACT ME</h2>
-        <p>언제든지 연락주세요!</p>
-        <p>dmsek053@naver.com</p>
-        <p>+82 10 8482 9164</p>
+        <p>어떤 상황에서라도 최선을 다할 수 있는 사람이 되며<br>늘 배우고 탐구하는 자세로 임하겠습니다.</p>
+        <p>💌 dmsek053@naver.com</p>
+        <p>📞 +82 10 8482 9164</p>
     </div>
-  </section>
-
 </main>
 
 <script type="text/javascript" src="./js/skrollr.min.js"></script>
