@@ -1,8 +1,4 @@
 $(function(){
-
-	skrollr.init();
-
-
     // about visual canvas--------------------------------------
     var bridge = document.getElementById("bridge"),
     bridgeCanvas = bridge.getContext('2d'),

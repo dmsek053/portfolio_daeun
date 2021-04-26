@@ -1,7 +1,9 @@
 @import url("./common.css");
 .header {
   position: fixed;
-  z-index: 5;
+  right: 0%;
+  top: 5%;
+  z-index: 999;
   width: 100%;
 }
 
@@ -62,6 +64,7 @@
 
 .menu {
   position: fixed;
+  z-index: 999;
   top: 0;
   width: 100%;
   visibility: hidden;
@@ -315,10 +318,13 @@
 }
 
 .main__first {
-  min-width: 100%;
+  width: 100%;
   height: 100vh;
-  background-size: contain;
-  position: relative;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
 }
 
 .main__first div {
@@ -341,8 +347,8 @@
   -webkit-transform: translate(-20%, 0%);
           transform: translate(-20%, 0%);
   opacity: 0;
-  -webkit-animation: firstAni 1s .5s forwards;
-          animation: firstAni 1s .5s forwards;
+  -webkit-animation: firstAni 1s 1s forwards;
+          animation: firstAni 1s 1s forwards;
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
@@ -371,8 +377,8 @@
   -webkit-transform: translate(20%, -30%);
           transform: translate(20%, -30%);
   opacity: 0;
-  -webkit-animation: firstAni2 1s .5s forwards;
-          animation: firstAni2 1s .5s forwards;
+  -webkit-animation: firstAni2 1s 1s forwards;
+          animation: firstAni2 1s 1s forwards;
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
@@ -401,8 +407,8 @@
   -webkit-transform: translate(-20%, -60%);
           transform: translate(-20%, -60%);
   opacity: 0;
-  -webkit-animation: firstAni3 1s .5s forwards;
-          animation: firstAni3 1s .5s forwards;
+  -webkit-animation: firstAni3 1s 1s forwards;
+          animation: firstAni3 1s 1s forwards;
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
@@ -548,7 +554,33 @@
   margin-bottom: -7px;
   /*Fix for safari gap*/
   position: absolute;
-  bottom: 0%;
+  bottom: -50%;
+  -webkit-animation: wavesAni 1s .1s forwards;
+          animation: wavesAni 1s .1s forwards;
+}
+
+@-webkit-keyframes wavesAni {
+  0% {
+    bottom: -20%;
+  }
+  50% {
+    bottom: -10%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@keyframes wavesAni {
+  0% {
+    bottom: -20%;
+  }
+  50% {
+    bottom: -10%;
+  }
+  100% {
+    bottom: 0%;
+  }
 }
 
 /* Animation */
@@ -607,37 +639,25 @@
   }
 }
 
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .main__waves {
-    height: 40px;
-    min-height: 40px;
-  }
-}
-
 /* body{color: #008cff71;} */
 .section__static {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30vh 0;
-  margin: 0 auto;
-  width: 90%;
-  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
 }
 
 .section__static h2 {
   font-size: 4.5rem;
+  margin-bottom: 2%;
 }
 
 .section__text {
-  width: 30%;
+  position: absolute;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  top: 50%;
 }
 
 .section__text h2 {
@@ -645,23 +665,42 @@
   line-height: 1;
 }
 
-.section__text p {
-  letter-spacing: -0.1rem;
-  color: #808080;
-}
-
 .section__text1 {
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: -0.1rem;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, #7dc2f777), color-stop(70%, transparent));
   background: linear-gradient(to top, #7dc2f777 70%, transparent 70%);
 }
 
 .section__img {
-  width: 70%;
-  margin-right: 10px;
+  position: absolute;
+  width: 50%;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  top: 50%;
   -webkit-box-shadow: 0 30px 30px rgba(0, 0, 0, 0.01), 0 10px 10px rgba(0, 0, 0, 0.11);
           box-shadow: 0 30px 30px rgba(0, 0, 0, 0.01), 0 10px 10px rgba(0, 0, 0, 0.11);
+}
+
+.sec1 {
+  z-index: 550;
+}
+
+.sec2 {
+  z-index: 600;
+  background: white;
+}
+
+.sec3 {
+  z-index: 650;
+  background: white;
+}
+
+.sec4 {
+  z-index: 700;
+  height: 40vh;
 }
 
 .c--anim-btn, .c-anim-btn {
@@ -671,13 +710,14 @@
 }
 
 .c--anim-btn {
-  margin-top: 10%;
+  margin-top: 15%;
   height: 95px;
   overflow: hidden;
   width: 95px;
   border: 1px solid #008cff;
   border-radius: 50px;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 .c-anim-btn {
@@ -712,61 +752,33 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .section__static {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 15vh 0;
-  }
-  .section__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 90%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 10%;
-  }
   .section__img {
-    width: 90%;
-  }
-  .c--anim-btn {
-    margin: 0;
-  }
-  .c-anim-btn {
-    margin-top: 2rem;
-  }
-  .c--anim-btn:hover .c-anim-btn {
-    margin-top: -10rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .main__h1 p {
-    font-size: 7rem;
-  }
-  .c-anim-btn {
-    margin-top: 2.5rem;
-  }
-  .c--anim-btn:hover .c-anim-btn {
-    margin-top: -11rem;
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .section__media1024 h2 {
-    font-size: 3.5rem;
+  .header {
+    top: 1%;
+  }
+  .main__h1 {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
   }
   .main__h1 p {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
   .main__h2 {
+    top: 40%;
+  }
+  .section__img {
+    top: 35%;
+    width: 80%;
+  }
+  .section__text {
     top: 50%;
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 /*# sourceMappingURL=main.css.map */

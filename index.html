@@ -42,21 +42,21 @@
 
   
 <!-- main------------------------------------ -->
-<main class="wrapper">
-  <section class="main__first">  
-    <div class="main__h1" data-0="opacity:1" data-500="opacity:0">
+<main id="skrollr-body">
+  <section class="main__first" data-0="top:0%" data-1000="top:-100%">  
+    <div class="main__h1" data-0="top:5%" data-1000="top:100%">
       <p>Aren't you</p>
       <p>Curious about</p>
       <p>Mine ?</p>
     </div>
-    <div class="main__h2">
+    <div class="main__h2" data-0="top:55%" data-1000="top:140%">
       <h1>Work</h1>
       <p>안녕하세요? 김다은의 포트폴리오입니다.</p>
     </div>
-    <div class="main__arrowicon">
+    <div class="main__arrowicon" data-0="bottom:15%" data-1000="bottom:-60%">
       <span class="main__arrow"></span>
     </div>
-    <div class="main__uiux">
+    <div class="main__uiux" data-0="bottom:5%" data-1000="bottom:-80%">
       <p>2021 PORTFOLIO / UI&UX</p>
     </div> 
 
@@ -74,69 +74,75 @@
       </g>
       </svg>
     </div>
-   
   </section>
 
-  <section class="section__static sec1">
-    <div class="section__text">
+  <section class="section__static sec1" data-0="top:100%" data-1000="top:0%" data-1200="background:rgba(73,173,255,1)" data-1500="background:rgba(255,255,255,1)" data-2500="top:0%" data-3000="top:-100%">
+    <div class="section__text" data-1500="right:-50%;" data-2000="right:25vw;">
       <div class="section__media1024">
         <h2>DAON<br>PENSION</h2>
-        <span class="section__text1">responsive</span>
-        <p>2021. 02 - 03</p>
+        <span class="section__text1">2021. 02. 03. RESPONSIVE</span>
       </div>
       <div class="c--anim-btn cursor-hover">
         <span class="c-anim-btn">more?</span>
         <span class="c-anim-btn2">더보기</span>
       </div>
     </div>
-    <div class="section__img">
+    <div class="section__img" data-1600="left:-80%;" data-2000="left:10%;">
       <img src="./imgs/work_daon.jpg" alt="">
     </div>
   </section>
 
-  <section class="section__static sec2">
-    <div class="section__text">
+  <section class="section__static sec2" data-2500="top:100%" data-3000="top:0%" data-4000="top:0%" data-4500="top:-100%">
+    <div class="section__text" data-3000="right:-50%" data-3500="right:24vw;">
       <div class="section__media1024">
         <h2>PARSONS<br>BRANDING</h2>
-        <span class="section__text1">web</span>
-        <p>2021. 03 ~ 04</p>
+        <span class="section__text1">2021. 03 ~ 04 web</span>
       </div>
       <div class="c--anim-btn cursor-hover">
         <span class="c-anim-btn">more?</span>
         <span class="c-anim-btn2">더보기</span>
       </div>
     </div>
-    <div class="section__img">
+    <div class="section__img" data-3100="left:-50%" data-3500="left:10%;">
       <img src="./imgs/work_parsons.jpg" alt="">
     </div>
   </section>
   
-  <section class="section__static sec3">
-    <div class="section__text">
+  <section class="section__static sec3" data-4000="top:100%" data-4500="top:0%">
+    <div class="section__text" data-4500="right:-50%" data-5000="right:23vw;">
       <div class="section__media1024">
-        <h2>PORT<br>FOLIO</h2>
-        <span class="section__text1">web</span>
-        <p>2021. 04</p>
+        <h2>PORTFOLIO</h2>
+        <span class="section__text1">2021. 04 web</span>
       </div>
       <div class="c--anim-btn cursor-hover">
         <span class="c-anim-btn">more?</span>
         <span class="c-anim-btn2">더보기</span>
       </div>
     </div>
-    <div class="section__img">
+    <div class="section__img" data-4600="left:-50%" data-5000="left:10%;">
       <img src="./imgs/work_portfolio.jpg" alt="">
     </div>
   </section>
 
+  <section class="section__static sec4" data-5500="top:100%" data-6000="top:70%">
+    <div class="main__waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="#008cff71" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="#008cff50" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="#008cff2f" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#008cff13" />
+      </g>
+      </svg>
+    </div>
+  </section>
 
 
 </main>
-
-
-<!-- footer---------------------------------- -->
-<footer>
-
-</footer>
 <script type="text/javascript" src="./js/skrollr.min.js"></script>
 </body>
 
