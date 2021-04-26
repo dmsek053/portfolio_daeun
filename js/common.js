@@ -1,5 +1,5 @@
 $(function(){
-
+  window.scrollTo(0, 1); 
 	skrollr.init({});
   
 // burger menu-----------------------------
