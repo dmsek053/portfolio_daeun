@@ -480,9 +480,8 @@ $fontE : 11rem;
 
 .c--anim-btn {
   margin-top: 15%;
-  height: 95px;
+  height: 95px; width: 95px;
   overflow: hidden;
-  width: 95px;
   border: 1px solid $blue;
   border-radius: 50px;
   font-size: $fontA;
@@ -522,6 +521,11 @@ $fontE : 11rem;
 
 
 // 미디어쿼리------------------------------
+@media screen and(min-width:541px){
+  .main__firstmobile{display: none;}
+}
+
+
 @media screen and (max-width: 1024px) { 
   .section__img{width: 40%;}
 }
@@ -534,8 +538,145 @@ $fontE : 11rem;
   .main__h1 p{font-size: 5.5rem;}
   .main__h2{top:40%;}
 
-  .section__img{top:35%; width: 80%;}
-  .section__text{top:50%; transform:translateX(-10%)}
+  .main__first,.sec1,.sec2,.sec3,.sec4{display: none;}
+
+  .main{
+    &__firstmobile{
+      width: 100%; height:100vh;
+      background: $white;
+  
+      div{position: absolute;}
+    }
+  
+    &__h1mobile{
+      left:5%; top:20%;
+  
+      p{
+        color: transparent;
+        -webkit-text-stroke : 1px $blue;
+        font-weight: bold;
+        font-size: 5rem;
+  
+        &:nth-of-type(1){
+          transform: translate(-20%, 0%); opacity: 0;
+          animation: firstAni 1s 1s forwards; filter:blur(10px);
+        }
+        @keyframes firstAni{100%{transform:translate(0%, 0%); opacity: 1; filter:blur(0px)}}
+  
+        &:nth-of-type(2){
+          transform: translate(20%, -30%); opacity: 0;
+          animation: firstAni2 1s 1s forwards; filter:blur(10px);
+        }
+        @keyframes firstAni2{100%{transform:translate(0%, -30%); opacity: 1; filter:blur(0px)}}
+  
+        &:nth-of-type(3){
+          transform: translate(-20%, -60%); opacity: 0;
+          animation: firstAni3 1s 1s forwards; filter:blur(10px);
+        }
+        @keyframes firstAni3{100%{transform:translate(0%, -60%); opacity: 1; filter:blur(0px)}}
+      }
+    }
+  
+    &__h2mobile{
+      width: 90%;
+      left:50%; top:55%;
+      transform-origin: 50% 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      letter-spacing: -0.1rem;
+      animation: firstAniH2 .5s 2s forwards;
+      filter: blur(10px); opacity: 0;
+      @keyframes firstAniH2{100%{filter:blur(0px);opacity:1}}
+  
+      h1{color: $black; font-size: 6rem;}
+      p{ 
+        display: inline-block; font-size:1.9rem;
+        background: linear-gradient(to top, #7dc3f7 25%, transparent 25%);
+      }
+    }
+
+    &__arrowiconmobile{
+      bottom:15%; left:50%;
+      animation: arrowAni .4s alternate infinite;
+    }
+    @keyframes arrowAni{
+      0%{transform:translateY(10px)}
+    }
+  
+    &__arrowmobile{
+      display: block;
+      margin: 30px auto;
+      width: 25px;
+      height: 25px;
+      border-top: 1px solid $blue;
+      border-left: 1px solid $blue;
+      transform: rotate(-135deg);
+      animation: firstAniH2 .5s 2s forwards;
+      filter: blur(10px); opacity: 0;
+  
+      &::after{
+        content: '';
+        display: block;
+        width: 1px;
+        height: 120px;
+        background-color: $blue;
+        transform: rotate(-45deg) translate(42px, 17px);
+      }
+    }
+    &__uiuxmobile{
+      animation: firstAniH2 .5s 2s forwards;
+      filter: blur(10px); opacity: 0;
+    }
+  
+  }
+  // 메인-------------------------------------
+  
+// section-----------------------------
+.section{
+  &__staticmobile{
+    width: 100%; height:100vh; position: relative;
+
+    h2{font-size: 4rem; margin-bottom: 2%;}
+  }
+
+  &__media1024mobile{
+    position: absolute; left:5%; top:30%;
+  }
+  &__textmobile{
+    h2{letter-spacing: -0.1rem; line-height: 1;}
+  }
+
+  &__text1mobile{
+    font-size: 2rem; letter-spacing: -0.1rem;
+    background: linear-gradient(to top, #7dc2f777 70%, transparent 70%);
+  }
+
+  &__imgmobile{
+    position: absolute; top:50%; left:5%;
+    width: 90%; margin:0 auto;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.01), 0 10px 10px rgba(0, 0, 0, 0.11);  }
+}
+.c--anim-btnmobile {
+  height: 60px; width: 60px;
+  border: 1px solid $blue;
+  border-radius: 50px;
+  position: absolute; right:5%; top:34%;
+}
+
+.c-anim-btnmobile{
+  margin-top: 2rem;  
+  text-decoration: none;
+  text-align: center;
+  display: block;  
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: $blue;
+  height: 100%;
+}
+// section-----------------------------
+
+
+
 }
 
 // 미디어쿼리------------------------------
