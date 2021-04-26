@@ -1,5 +1,4 @@
 $(function(){
-	skrollr.init({});
   
 // burger menu-----------------------------
   var Menu = (function() {

@@ -777,7 +777,7 @@
   .main__h2 {
     top: 40%;
   }
-  .main__first, .sec1, .sec2, .sec3, .sec4 {
+  .main__first, .section__static {
     display: none;
   }
   .main__firstmobile {
