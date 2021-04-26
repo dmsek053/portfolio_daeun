@@ -522,9 +522,8 @@ $fontE : 11rem;
 
 // 미디어쿼리------------------------------
 @media screen and(min-width:541px){
-  .main__firstmobile{display: none;}
+  .main__firstmobile,.section__staticmobile{display: none;}
 }
-
 
 @media screen and (max-width: 1024px) { 
   .section__img{width: 40%;}
