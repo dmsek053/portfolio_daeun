@@ -970,8 +970,9 @@
   }
   .section__staticmobile {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     position: relative;
+    border-bottom: 1px solid #e4e4e4;
   }
   .section__staticmobile h2 {
     font-size: 4rem;
@@ -980,7 +981,7 @@
   .section__media1024mobile {
     position: absolute;
     left: 5%;
-    top: 30%;
+    top: 25%;
   }
   .section__textmobile h2 {
     letter-spacing: -0.1rem;
@@ -994,7 +995,7 @@
   }
   .section__imgmobile {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 5%;
     width: 90%;
     margin: 0 auto;
@@ -1008,7 +1009,7 @@
     border-radius: 50px;
     position: absolute;
     right: 5%;
-    top: 34%;
+    top: 27%;
   }
   .c-anim-btnmobile {
     margin-top: 2rem;
