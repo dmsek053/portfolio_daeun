@@ -67,7 +67,7 @@ function niceScroll(){
 function matchEvent(e) {
   if (e.matches) {
     niceScroll();
-    
+    skrollr.init();
   } else {
   }
 }
