@@ -423,10 +423,168 @@ $spacing : -0.2px;
 
 
 // 미디어쿼리------------------------------
-@media screen and (max-width: 1024px) { 
-  .main__visual{
-    span{display: none;}
+@media screen and (min-width: 1025px) { 
+  .main__firstmobile,.main__secondmobile,.about__thirdmobile,.skills__fourthmobile,.pr__fifthmobile,.pr__innermobile{
+    display: none;
   }
+}
+@media screen and (max-width: 1024px) { 
+  .bg1,.main__first,.main__second,.about__third,.skills__fourth,.pr__fifth,.pr__inner{
+    display: none;
+  }
+
+  .header{top:1%;}
+  .main{
+    &__firstmobile{
+      width: 100%; height:100vh;
+    }
+  
+    &__visualmobile{
+      width: 90%; margin:0 auto;
+      p{
+        font-size: 6rem; font-weight: normal; line-height: 1.2;
+        filter: blur(50px); opacity: 0; font-weight: bold;
+        animation: abouttitle 1s .3s forwards;
+        @keyframes abouttitle{ 100% {filter: none; opacity: 1;} };
+  
+        &:nth-of-type(1){padding-top: 45%;}
+        &:nth-of-type(2){
+          &::after{
+            content: ''; display: inline-block;
+            width: 0px; border-bottom: 2px solid $blue;
+            margin-left: 20px;
+            animation:  aboutafter .5s 1.3s forwards;
+            @keyframes aboutafter{ 100% {width: 100px;} };
+          }
+        }
+      }
+  
+      canvas{
+        background-image: url(../imgs/about_main_visual2.jpg);
+        background-size: contain; width: 100%;
+        cursor:  crosshair;
+        cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;  
+      }
+    }
+  
+    &__secondmobile{
+     width:100%;height: 50vh;
+     background-image: url(../imgs/work_background.jpg);
+     display: flex; align-items: center;
+    }
+
+    &__commentmobile{
+      width: 90%; margin: 0 auto;
+      p{
+        letter-spacing: $spacing;
+        font-size: 1.9rem;
+        position: relative;
+        line-height: 2;
+  
+        &:nth-of-type(1){
+          font-size: 6rem;  margin: 30px 0; letter-spacing: 5px;
+          &::after{
+              content: 'WHO AM I';
+              display: inline-block;
+              position: absolute;
+              right:0; font-weight: bold;
+              color: transparent; font-size: 7rem;
+              -webkit-text-stroke : 1px #008cff;
+          }
+        }
+        &:nth-of-type(2){ font-size: 3rem; strong{font-size: 3rem;}}
+        &:nth-of-type(3){ font-weight: bold; margin-bottom: 30px;}
+        strong{font-size: 1.9rem;}
+      }
+    }
+  }
+  .about{
+    &__thirdmobile{
+      width: 100%; height:50vh; margin: 0 auto;
+      background-image: url(../imgs/work_background.jpg);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    &__imgmobile{
+      width: 40%; margin-left: 5%;
+    }
+    &__commentmobile{
+      width: 45%; margin-right: 5%;
+    }
+
+    &__commentmobile{
+      li{
+        &:nth-of-type(1){margin-bottom: 70px;}
+        h3{font-size: 3rem; margin-bottom: 15px; color: $blue;}
+        .comment__title{
+          font-size: 1.9rem; font-weight: bold;
+          margin-right: 15px;
+        }
+        span{font-size: 2.1rem; line-height: 1.7; letter-spacing: $spacing;}
+      }
+    }
+  }
+  .skills{
+    &__fourthmobile{
+        width:100%; height:50vh; margin: 0 auto;
+        display: flex; justify-content: space-between; align-items: center;
+        background-image: url(../imgs/work_background.jpg);
+    }
+  
+    &__titlemobile{ 
+      letter-spacing: $spacing; font-size: 4rem;
+      margin-left: 5%;
+    }
+    &__contentsmobile{ margin-right: 5%;}
+  
+    &__textmobile{
+      margin-bottom: 30px; padding-left: 90px;
+      position: relative;
+      &::before{
+        content: ''; width: 70px; height:70px; display: inline-block;
+        background-image: url(../imgs/skill_icon1.jpg); border-radius: 50%;
+        background-size: contain;  z-index: 800;
+        position: absolute; left:0; top:5px;
+      }
+      h2{font-size: 2rem; letter-spacing: $spacing; margin-bottom: 8px;}
+      p{font-size: 1.9rem; letter-spacing: $spacing;}
+    }
+    &__textmobile:nth-of-type(2)::before{background-image: url(../imgs/skill_icon2.jpg);}
+    &__textmobile:nth-of-type(3)::before{background-image: url(../imgs/skill_icon3.jpg);}
+    &__textmobile:nth-of-type(4)::before{background-image: url(../imgs/skill_icon4.jpg);}
+    &__textmobile:nth-of-type(5)::before{background-image: url(../imgs/skill_icon5.jpg);}
+  }
+.pr{
+  &__innermobile{
+    width: 90%; height:50vh; margin: 0 auto;
+    display: flex; align-items: center; justify-content: center;
+    h2{
+      font-size: 5rem; margin-bottom: 10px; text-align: center;
+      &::after{
+        content: ''; display: inline-block;
+        width: 40px; border-bottom: 2px solid $blue;
+        margin-left: 20px;
+        animation:  aboutafter2 1s infinite;
+        @keyframes aboutafter2{ 100% {opacity: 0} };
+      }
+    }
+    p{
+      font-size:2rem; text-align: center;
+      &:nth-of-type(1){
+        margin-bottom:50px;
+      }
+    }
+  }
+}
+  
+
+
+
+
+
+
+
+
+
 }
 @media screen and (max-width: 768px) {
 }

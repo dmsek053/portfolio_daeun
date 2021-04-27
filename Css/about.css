@@ -653,9 +653,277 @@
           transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 1024px) {
-  .main__visual span {
+@media screen and (min-width: 1025px) {
+  .main__firstmobile, .main__secondmobile, .about__thirdmobile, .skills__fourthmobile, .pr__fifthmobile, .pr__innermobile {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bg1, .main__first, .main__second, .about__third, .skills__fourth, .pr__fifth, .pr__inner {
+    display: none;
+  }
+  .header {
+    top: 1%;
+  }
+  .main__firstmobile {
+    width: 100%;
+    height: 100vh;
+  }
+  .main__visualmobile {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main__visualmobile p {
+    font-size: 6rem;
+    font-weight: normal;
+    line-height: 1.2;
+    -webkit-filter: blur(50px);
+            filter: blur(50px);
+    opacity: 0;
+    font-weight: bold;
+    -webkit-animation: abouttitle 1s .3s forwards;
+            animation: abouttitle 1s .3s forwards;
+  }
+  @-webkit-keyframes abouttitle {
+    100% {
+      -webkit-filter: none;
+              filter: none;
+      opacity: 1;
+    }
+  }
+  @keyframes abouttitle {
+    100% {
+      -webkit-filter: none;
+              filter: none;
+      opacity: 1;
+    }
+  }
+  .main__visualmobile p:nth-of-type(1) {
+    padding-top: 45%;
+  }
+  .main__visualmobile p:nth-of-type(2)::after {
+    content: '';
+    display: inline-block;
+    width: 0px;
+    border-bottom: 2px solid #008cff;
+    margin-left: 20px;
+    -webkit-animation: aboutafter .5s 1.3s forwards;
+            animation: aboutafter .5s 1.3s forwards;
+  }
+  @-webkit-keyframes aboutafter {
+    100% {
+      width: 100px;
+    }
+  }
+  @keyframes aboutafter {
+    100% {
+      width: 100px;
+    }
+  }
+  .main__visualmobile canvas {
+    background-image: url(../imgs/about_main_visual2.jpg);
+    background-size: contain;
+    width: 100%;
+    cursor: crosshair;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+  }
+  .main__secondmobile {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../imgs/work_background.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__commentmobile {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main__commentmobile p {
+    letter-spacing: -0.2px;
+    font-size: 1.9rem;
+    position: relative;
+    line-height: 2;
+  }
+  .main__commentmobile p:nth-of-type(1) {
+    font-size: 6rem;
+    margin: 30px 0;
+    letter-spacing: 5px;
+  }
+  .main__commentmobile p:nth-of-type(1)::after {
+    content: 'WHO AM I';
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    color: transparent;
+    font-size: 7rem;
+    -webkit-text-stroke: 1px #008cff;
+  }
+  .main__commentmobile p:nth-of-type(2) {
+    font-size: 3rem;
+  }
+  .main__commentmobile p:nth-of-type(2) strong {
+    font-size: 3rem;
+  }
+  .main__commentmobile p:nth-of-type(3) {
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .main__commentmobile p strong {
+    font-size: 1.9rem;
+  }
+  .about__thirdmobile {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    background-image: url(../imgs/work_background.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__imgmobile {
+    width: 40%;
+    margin-left: 5%;
+  }
+  .about__commentmobile {
+    width: 45%;
+    margin-right: 5%;
+  }
+  .about__commentmobile li:nth-of-type(1) {
+    margin-bottom: 70px;
+  }
+  .about__commentmobile li h3 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #008cff;
+  }
+  .about__commentmobile li .comment__title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  .about__commentmobile li span {
+    font-size: 2.1rem;
+    line-height: 1.7;
+    letter-spacing: -0.2px;
+  }
+  .skills__fourthmobile {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(../imgs/work_background.jpg);
+  }
+  .skills__titlemobile {
+    letter-spacing: -0.2px;
+    font-size: 4rem;
+    margin-left: 5%;
+  }
+  .skills__contentsmobile {
+    margin-right: 5%;
+  }
+  .skills__textmobile {
+    margin-bottom: 30px;
+    padding-left: 90px;
+    position: relative;
+  }
+  .skills__textmobile::before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-image: url(../imgs/skill_icon1.jpg);
+    border-radius: 50%;
+    background-size: contain;
+    z-index: 800;
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+  .skills__textmobile h2 {
+    font-size: 2rem;
+    letter-spacing: -0.2px;
+    margin-bottom: 8px;
+  }
+  .skills__textmobile p {
+    font-size: 1.9rem;
+    letter-spacing: -0.2px;
+  }
+  .skills__textmobile:nth-of-type(2)::before {
+    background-image: url(../imgs/skill_icon2.jpg);
+  }
+  .skills__textmobile:nth-of-type(3)::before {
+    background-image: url(../imgs/skill_icon3.jpg);
+  }
+  .skills__textmobile:nth-of-type(4)::before {
+    background-image: url(../imgs/skill_icon4.jpg);
+  }
+  .skills__textmobile:nth-of-type(5)::before {
+    background-image: url(../imgs/skill_icon5.jpg);
+  }
+  .pr__innermobile {
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pr__innermobile h2 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .pr__innermobile h2::after {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    border-bottom: 2px solid #008cff;
+    margin-left: 20px;
+    -webkit-animation: aboutafter2 1s infinite;
+            animation: aboutafter2 1s infinite;
+  }
+  @-webkit-keyframes aboutafter2 {
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes aboutafter2 {
+    100% {
+      opacity: 0;
+    }
+  }
+  .pr__innermobile p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .pr__innermobile p:nth-of-type(1) {
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=about.css.map */
