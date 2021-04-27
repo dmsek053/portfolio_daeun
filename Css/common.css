@@ -23,3 +23,6 @@ a{text-decoration: none;}
 @media screen and (max-width: 768px) { 
     *{font-size: 8px;}
 }
+@media screen and (max-width: 540px) { 
+    *{font-size: 7px;}
+}
