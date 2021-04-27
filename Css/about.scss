@@ -507,14 +507,12 @@ $spacing : -0.2px;
     &__imgmobile{
       width: 40%; margin-left: 5%;
     }
-    &__commentmobile{
-      width: 45%; margin-right: 5%;
-    }
 
     &__commentmobile{
+      width: 45%; margin-right: 5%;
       li{
         &:nth-of-type(1){margin-bottom: 70px;}
-        h3{font-size: 3rem; margin-bottom: 15px; color: $blue;}
+        h3{font-size: 3rem; margin-bottom: 5px; color: $blue;}
         .comment__title{
           font-size: 1.9rem; font-weight: bold;
           margin-right: 15px;
@@ -522,6 +520,8 @@ $spacing : -0.2px;
         span{font-size: 2.1rem; line-height: 1.7; letter-spacing: $spacing;}
       }
     }
+
+    &__titlemobile{font-weight: bold; margin-right: 10px;}
   }
   .skills{
     &__fourthmobile{
