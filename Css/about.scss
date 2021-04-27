@@ -553,31 +553,28 @@ $spacing : -0.2px;
     &__textmobile:nth-of-type(4)::before{background-image: url(../imgs/skill_icon4.jpg);}
     &__textmobile:nth-of-type(5)::before{background-image: url(../imgs/skill_icon5.jpg);}
   }
-.pr{
-  &__innermobile{
-    width: 90%; height:50vh; margin: 0 auto;
-    display: flex; align-items: center; justify-content: center;
-    h2{
-      font-size: 5rem; margin-bottom: 10px; text-align: center;
-      &::after{
-        content: ''; display: inline-block;
-        width: 40px; border-bottom: 2px solid $blue;
-        margin-left: 20px;
-        animation:  aboutafter2 1s infinite;
-        @keyframes aboutafter2{ 100% {opacity: 0} };
+  .pr{
+    &__innermobile{
+      width: 90%; height:50vh; margin: 0 auto;
+      display: flex; align-items: center; justify-content: center;
+      h2{
+        font-size: 5rem; margin-bottom: 10px; text-align: center;
+        &::after{
+          content: ''; display: inline-block;
+          width: 40px; border-bottom: 2px solid $blue;
+          margin-left: 20px;
+          animation:  aboutafter2 1s infinite;
+          @keyframes aboutafter2{ 100% {opacity: 0} };
+        }
       }
-    }
-    p{
-      font-size:2rem; text-align: center;
-      &:nth-of-type(1){
-        margin-bottom:50px;
+      p{
+        font-size:2rem; text-align: center;
+        &:nth-of-type(1){
+          margin-bottom:50px;
+        }
       }
     }
   }
-}
-}
-@media screen and (max-width: 768px) {
-
 }
 @media screen and (max-width: 540px) { 
   .main__visualmobile{
@@ -617,11 +614,9 @@ $spacing : -0.2px;
     &:nth-of-type(4)::before{background-image:none;background:#333333;}
     &:nth-of-type(5)::before{background-image:none;background:#333333;}  
   }
-
   .skills__fourthmobile{height:100vh;}
   .skills__titlemobile{display: none;}
   .skills__contentsmobile{width: 90%; margin:0 auto;}
-
 }
 
 // 미디어쿼리------------------------------
