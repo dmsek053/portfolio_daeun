@@ -1,5 +1,4 @@
 $(function(){
-  
 // burger menu-----------------------------
   var Menu = (function() {
   var burger = document.querySelector('.burger');

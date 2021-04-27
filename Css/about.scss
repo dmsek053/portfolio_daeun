@@ -30,7 +30,7 @@ $spacing : -0.2px;
   transform-origin: 50% 50%; transform: translateX(-50%);
   position: absolute; left:50%; top:-60px;
 }
-// circle-stickeer-------------------------
+// circle-stickeer------------------------- 
 
 // 헤더+버거메뉴----------------------------
 @mixin easeOut { transition: all .4s cubic-bezier(0.23, 1, 0.32, 1) }
@@ -232,7 +232,7 @@ $spacing : -0.2px;
 // 헤더+버거메뉴----------------------------
 
 
-//   about main----------------------------------
+// about main----------------------------------
 .bg1{
   position: fixed; z-index: 700; width: 100%; height:100vh;
   background-image: url(../imgs/work_background.jpg);
