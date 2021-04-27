@@ -770,7 +770,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .section__img {
+  .section__img img {
     width: 40%;
   }
   .header {
@@ -1029,6 +1029,12 @@
     font-weight: normal;
     color: #008cff;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .section__img {
+    width: 45%;
   }
 }
 /*# sourceMappingURL=main.css.map */

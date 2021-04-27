@@ -524,7 +524,7 @@ $fontE : 11rem;
 }
 
 @media screen and (max-width: 1024px) { 
-  .section__img{width: 40%;}
+  .section__img img{width: 40%;}
 
   .header{top:1%;}
   .main__h1{transform:translateY(50%);}
@@ -670,13 +670,9 @@ $fontE : 11rem;
 // section-----------------------------
 
 }
-@media screen and (max-width: 768px) {  
 
-}
-@media screen and (max-width: 540px) { 
-
-
-
+@media screen and (max-width: 1370px) {
+  .section__img{width: 45%;}
 }
 
 // 미디어쿼리------------------------------
