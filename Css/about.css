@@ -277,7 +277,7 @@
   z-index: 700;
   width: 100%;
   height: 100%;
-  background: #e7f8ff;
+  background-image: url(../imgs/work_background.jpg);
 }
 
 .main__first {
@@ -385,8 +385,8 @@
 }
 
 .main__second {
-  width: 80%;
-  bottom: 30%;
+  width: 100%;
+  height: 100vh;
   position: fixed;
   z-index: 750;
 }
@@ -411,7 +411,7 @@
   right: 0;
   font-weight: bold;
   color: transparent;
-  font-size: 10rem;
+  font-size: 7rem;
   -webkit-text-stroke: 1px #008cff;
 }
 
@@ -432,9 +432,20 @@
   font-size: 1.9rem;
 }
 
+.main__comment {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .about__third {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   z-index: 750;
   background: white;
@@ -446,13 +457,17 @@
   font-weight: normal;
   letter-spacing: -0.2px;
   position: absolute;
-  top: 45%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: 50%,50%;
+          transform-origin: 50%,50%;
 }
 
-.about__selfie {
+.about__third img {
   position: absolute;
-  -webkit-transform-origin: 0% 50%;
-          transform-origin: 0% 50%;
+  -webkit-transform-origin: 0%,50%;
+          transform-origin: 0%,50%;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
   top: 50%;
@@ -502,7 +517,9 @@
   font-weight: normal;
   letter-spacing: -0.2px;
   position: absolute;
-  top: 20vh;
+  top: 20%;
+  left: 20%;
+  font-size: 5rem;
 }
 
 .skills__contents {
@@ -586,12 +603,9 @@
 .pr__inner {
   position: fixed;
   z-index: 850;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  width: 100%;
+  height: 100vh;
+  background: white;
 }
 
 .pr__inner h2 {
@@ -627,5 +641,21 @@
 
 .pr__inner p:nth-of-type(1) {
   margin-bottom: 50px;
+}
+
+.pr__comment {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .main__visual span {
+    display: none;
+  }
 }
 /*# sourceMappingURL=about.css.map */
