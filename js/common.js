@@ -1,5 +1,9 @@
 $(function(){
 
+  $(document).ready(function() {
+    $('.loading').delay(600).fadeOut(300);
+  });
+
   $('header').load('inc.html header',init); 
 
   function init(){
@@ -74,6 +78,7 @@ $(function(){
   }
   clickList();
   // 미디어 쿼리  --------------------------------------------
+
 
 }
 

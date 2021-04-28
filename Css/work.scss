@@ -148,9 +148,9 @@ $fontE : 13rem;
       }
   }
   &__text{
-    position: absolute; top:50%; left:10%;
+    position: absolute; top:50%; left:10%; margin: 0 auto; width: 80%;
     transform-origin: 0% 50%; transform:translate(0%,-50%);
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex; align-items: center; justify-content: space-around;
   }
   &__contents1{width: 50%;}
   &__contents2{width: 30%;}
