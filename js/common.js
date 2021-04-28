@@ -1,5 +1,9 @@
 $(function(){
-// burger menu-----------------------------
+
+  $('header').load('inc.html header',init); 
+
+  function init(){
+  // burger menu-----------------------------
   var Menu = (function() {
   var burger = document.querySelector('.burger');
   var menu = document.querySelector('.menu');
@@ -18,7 +22,6 @@ $(function(){
       for (var i = 0, ii = menuItems.length; i < ii; i++) {
         menuItems[i].classList.add('menu__item--active');
       }
-      
       active = true;
     } else {
       menu.classList.remove('menu--active');
@@ -28,7 +31,6 @@ $(function(){
       for (var i = 0, ii = menuItems.length; i < ii; i++) {
         menuItems[i].classList.remove('menu__item--active');
       }
-      
       active = false;
     }
   };
@@ -37,54 +39,43 @@ $(function(){
     burger.addEventListener('click', toggleMenu, false);
   };
 
-  var init = function() {
-    bindActions();
-  };
+  var init = function() { bindActions(); };
 
-  return {
-    init: init
-  };
-
+  return { init: init };
   }());
 
   Menu.init();
-// burger menu-----------------------------
+  // burger menu-----------------------------
 
 
-// 스크롤 이벤트---------------------------------
-function niceScroll(){
-  $('body').niceScroll({
-    scrollspeed: 100,
-    smoothscroll: true
-  }); 
-}
-// 스크롤 이벤트---------------------------------
-
-
-// 미디어 쿼리  --------------------------------------------
-function matchEvent(e) {
-  if (e.matches) {
-    niceScroll();
-    skrollr.init();
-  } else {
+  // 스크롤 이벤트---------------------------------
+  function niceScroll(){
+    $('body').niceScroll({
+      scrollspeed: 100,
+      smoothscroll: true
+    }); 
   }
+  // 스크롤 이벤트---------------------------------
+
+
+  // 미디어 쿼리  --------------------------------------------
+  function matchEvent(e) {
+    if (e.matches) {
+      niceScroll();
+      skrollr.init();
+    } else {
+    }
+  }
+
+  function clickList() {
+    var mq = window.matchMedia('screen and (min-width:1025px)');
+    matchEvent(mq);
+    mq.addListener(matchEvent);
+  }
+  clickList();
+  // 미디어 쿼리  --------------------------------------------
+
 }
-  
-function clickList() {
-  var mq = window.matchMedia('screen and (min-width:1025px)');
-  matchEvent(mq);
-  mq.addListener(matchEvent);
-}
-clickList();
-// 미디어 쿼리  --------------------------------------------
-
-
-
-
-
-
-
-
 
 
 });
