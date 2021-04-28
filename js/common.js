@@ -39,49 +39,50 @@ $(function(){
     }
   };
 
-  var bindActions = function() {
-    burger.addEventListener('click', toggleMenu, false);
-  };
+    var bindActions = function() {
+      burger.addEventListener('click', toggleMenu, false);
+    };
 
-  var init = function() { bindActions(); };
+    var init = function() { bindActions(); };
 
-  return { init: init };
-  }());
+    return { init: init };
+    }());
 
-  Menu.init();
-  // burger menu-----------------------------
-
-
-  // 스크롤 이벤트---------------------------------
-  function niceScroll(){
-    $('body').niceScroll({
-      scrollspeed: 100,
-      smoothscroll: true
-    }); 
-  }
-  // 스크롤 이벤트---------------------------------
+    Menu.init();
+    // burger menu-----------------------------
 
 
-  // 미디어 쿼리  --------------------------------------------
-  function matchEvent(e) {
-    if (e.matches) {
-      niceScroll();
-      skrollr.init();
-    } else {
+    // 스크롤 이벤트---------------------------------
+    function niceScroll(){
+      $('body').niceScroll({
+        scrollspeed: 100,
+        smoothscroll: true
+      }); 
     }
-  }
-
-  function clickList() {
-    var mq = window.matchMedia('screen and (min-width:1025px)');
-    matchEvent(mq);
-    mq.addListener(matchEvent);
-  }
-  clickList();
-  // 미디어 쿼리  --------------------------------------------
+    // 스크롤 이벤트---------------------------------
 
 
-}
+    // 미디어 쿼리  --------------------------------------------
+    function matchEvent(e) {
+      if (e.matches) {
+        niceScroll();
+        skrollr.init();
+      } else {
+      }
+    }
 
+    function clickList() {
+      var mq = window.matchMedia('screen and (min-width:1025px)');
+      matchEvent(mq);
+      mq.addListener(matchEvent);
+    }
+    clickList();
+    // 미디어 쿼리  --------------------------------------------
+    
+    }
+
+
+  
 
 });
 
