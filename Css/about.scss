@@ -5,7 +5,7 @@
 // color------------------------
 $white: white;
 $gray: #e4e4e4;
-$black: #333333;
+$black: #333;
 $blue: #008cff;
 // color------------------------
 
@@ -35,7 +35,7 @@ $spacing : -0.2px;
 // about main----------------------------------
 .bg1{
   position: fixed; z-index: 700; width: 100%; height:100vh;
-  background-image: url(../imgs/work_background.jpg);
+  background:#f4f6fa;
 }
 
 .main{
@@ -44,7 +44,7 @@ $spacing : -0.2px;
   }
 
   &__visual{
-    width: 80%; margin:0 auto;
+    width: 70%; margin:0 auto;
     p{
       font-size: 6rem; font-weight: normal; line-height: 1.2;
       filter: blur(50px); opacity: 0; font-weight: bold;
@@ -64,15 +64,18 @@ $spacing : -0.2px;
     } 
     span{
       position: absolute; transform: rotate(-90deg);
-      font-size: 4em; z-index: 700; left:-6%;
+      font-size: 3em; z-index: 700; left:3%;
     }
 
     canvas{
       transform: translateY(100%);
-      background-image: url(../imgs/about_main_visual2.jpg);
-      background-size: contain; width: 80%;
+      background-image: url(../imgs/about_main_visual3.jpg);
+      background-size: contain; width: 70%; height:80vh;
       cursor:  crosshair;
-      position: absolute; top:500px; left:10%; z-index: 700;
+      position: absolute; top:500px; left:15%; z-index: 700;
+      border-radius: 20px;
+      border: 1px solid $gray;
+      box-shadow: 0 30px 30px rgba(0,0,0,0.01), 0 10px 10px rgba(0, 0, 0, 0.11);
       cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;  
       animation:  aboutvisual .7s 1.7s forwards;
       @keyframes aboutvisual{ 100% {transform:translateY(0);} };
@@ -106,7 +109,7 @@ $spacing : -0.2px;
     }
   }
   &__comment{
-    width: 80%;
+    width: 70%;
     position: absolute;left:50%; top:45%; transform-origin: 50% 50%; transform: translate(-50%,-50%);
   }
 }
@@ -115,27 +118,30 @@ $spacing : -0.2px;
   &__third{
     width: 100%; height:100vh; position: fixed; z-index: 750; 
     background:$white;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.01), 0 10px 10px rgba(0, 0, 0, 0.11);
+
 
     h2{
       font-size: 5rem; text-align: center; font-weight: normal; letter-spacing: $spacing;
-      position: absolute; top:50%; transform: translate(-50%, -50%); transform-origin:50%,50%;
+      position: absolute; top:25%; left:50%; transform: translate(0%, -50%); transform-origin:0%,50%;
     }
 
     img{
       position: absolute; transform-origin: 0%,50%; transform: translate(0%,-50%); top:50%;
+      width: 25%; filter: grayscale(100%); left:20%;
     }
   }
   
   &__comment{
-    position: absolute; top:50%; left:55%; transform-origin: 0% 50%; transform:translate(0%, -50%);
+    position: absolute; top:55%; right:20%; transform-origin: 0% 50%; transform:translate(0%, -50%);
     li{
       &:nth-of-type(1){margin-bottom: 70px;}
-      h3{font-size: 3rem; margin-bottom: 15px; color: $blue;}
+      h3{font-size: 3.5rem; margin-bottom: 15px; color: $black; font-weight: normal;}
       .comment__title{
         font-size: 1.9rem; font-weight: bold;
         margin-right: 15px;
       }
-      span{font-size: 2.1rem; line-height: 1.7; letter-spacing: $spacing;}
+      span{font-size: 1.8rem; line-height: 1.7; letter-spacing: $spacing;}
     }
   }
 }
@@ -144,15 +150,16 @@ $spacing : -0.2px;
   &__fourth{
       position: fixed; z-index: 750; width:100%; height:100%;
       background: $white; 
+      box-shadow: 0 30px 30px rgba(0,0,0,0.01), 0 10px 10px rgba(0, 0, 0, 0.11);
   }
 
   &__title{ 
     font-weight: normal; letter-spacing: $spacing;
-    position: absolute; top:20%; left:20%; font-size: 5rem;
+    position: absolute; top:20%; left:20%; font-size: 4rem;
   }
   
   &__contents{
-    position: absolute; left:50%; top:20vh;
+    position: absolute; right:20%; top:20vh;
   }
 
   &__text{
@@ -164,8 +171,8 @@ $spacing : -0.2px;
       background-size: contain;  z-index: 800;
       position: absolute; left:0; top:5px;
     }
-    h2{font-size: 2rem; letter-spacing: $spacing; margin-bottom: 8px;}
-    p{font-size: 1.9rem; letter-spacing: $spacing;}
+    h2{font-size: 2.2rem; letter-spacing: $spacing; margin-bottom: 8px;}
+    p{font-size: 1.8rem; letter-spacing: $spacing;}
   }
   &__text:nth-of-type(2)::before{background-image: url(../imgs/skill_icon2.jpg);}
   &__text:nth-of-type(3)::before{background-image: url(../imgs/skill_icon3.jpg);}
@@ -177,7 +184,7 @@ $spacing : -0.2px;
   &__fifth{
     position: fixed; z-index: 800;
     width: 100%; height:100vh;
-    background: $gray;
+    background: #f4f6fa;
   }
 
   &__text{

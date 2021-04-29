@@ -12,9 +12,9 @@ $(function(){
     }
 
     if (window.devicePixelRatio >= 2) {
-        img.src = './imgs/about_main_visual.jpg';
+        img.src = './imgs/about_main_visual4.jpg';
         } else {
-        img.src = './imgs/about_main_visual.jpg';
+        img.src = './imgs/about_main_visual4.jpg';
         }
 
     function detectLeftButton(event) {

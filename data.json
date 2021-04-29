@@ -2,25 +2,28 @@
     "gallery":[
         {
             "type" : "daonpension",
-            "title" : "DAON",
-            "title2" : "PENSION",
+            "title" : "Daon",
+            "title2" : "Pension",
             "title3" : "RESPONSIVE",
             "visImg" : "./imgs/work_daon.jpg",
             "month" : "2 0 2 1년  0 2 월  ~  0 3 월",
             "explanation" : "웹표준의 기준에 맞춰 제작하였으며 다양한 사용자 환경에 대응하기 위해 모바일과 태블릿으로도 접근하기 용이하도록 제작된 <b>반응형 홈페이지 </b>입니다. <b>다양한 인터랙션</b>을 사용하여 사용자의 흥미를 유발해 기존의 사이트와는 차별화되고 변화된 모습을 보여주었습니다.",
-            "hashtag" : "# 다양한 유형의 슬라이드",
+            "hashtag" : "# 반응형 웹사이트",
             "hashtag2" : "# 스크롤 이펙트",
-            "hashtag3" : "# 이미지 팝업창",
+            "hashtag3" : "# 다양한 유형의 슬라이드 효과",
             "hashtag4" : "# 움직이는 이미지",
-            "workimgs" : "./imgs/work_daon2.jpg",
-            "workimgs2" : "./imgs/work_daon3.jpg",
-            "workimgs3" : "./imgs/work_daon4.jpg",
-            "workimgs4" : "./imgs/work_daon5.jpg",
-            "workimgs5" : "./imgs/work_daon6.jpg",
+            "workimgs" : "./imgs/work_daon.jpg",
+            "workimgs2" : "./imgs/work_daon_tablet.jpg",
+            "workimgs3" : "./imgs/work_daon_mobile.jpg",
             "explanation2" : "디자인과 레이아웃이 간결하고 편안하게 느껴질 수 있도록 메인 페이지를 풀화면으로 설계하였습니다. 스와이프를 통해 다양한 비주얼 이미지를 보여주며 사용자의 니즈를 충족시켜줄 수 있도록 하였습니다. 스크롤 이펙트를 통해 부드러운 화면 전환을 주어 사용자에게 편안한 느낌을 주었습니다.",
             "explanation3" : "HTML5 / CSS3",
             "explanation3_1" : "Json / JavaScript",
-            "explanation3_2" : "Photoshop / illustration"
+            "explanation3_2" : "Photoshop / illustration",
+            "hashImg" : "./imgs/work_daon2.jpg",
+            "hashImg2" : "./imgs/work_daon3.jpg",
+            "hashImg3" : "./imgs/work_daon4.jpg",
+            "hashImg4" : "./imgs/work_daon5.jpg",
+            "hashImg5" : "./imgs/work_daon6.jpg"
         },
         {
             "type" : "parsonsbranding",
@@ -34,15 +37,18 @@
             "hashtag2" : "# 스크롤 이펙트",
             "hashtag3" : "# 이미지 슬라이드",
             "hashtag4" : "# 마우스 커서 효과",
-            "workimgs" : "./imgs/work_parsons2.jpg",
-            "workimgs2" : "./imgs/work_parsons3.jpg",
-            "workimgs3" : "./imgs/work_parsons4.jpg",
-            "workimgs4" : "./imgs/work_parsons5.jpg",
-            "workimgs5" : "./imgs/work_parsons6.jpg",
+            "workimgs" : "./imgs/work_parsons.jpg",
+            "workimgs2" : "./imgs/work_parsons_tablet.jpg",
+            "workimgs3" : "./imgs/work_parsons_mobile.jpg",
             "explanation2" : "마우스 커서 모양의 변경, 메인 페이지에서 스크롤 이펙트를 통해 이미지를 슬라이드하는 과정과 이미지 hover시 배경색상이 전환되는 효과에대해 배울 수 있었습니다. 실제로 스크롤 이펙트에 대한 이미지 슬라이드를 구현하는 데 약간의 어려움이 있었지만 노력 끝에 이미지별로 부드럽게 스크롤되는 효과를 구현했습니다. ",
             "explanation3" : "HTML5 / CSS3 / SCSS",
             "explanation3_1" : "Jquery / JavaScript",
-            "explanation3_2" : "illustration"
+            "explanation3_2" : "illustration",
+            "hashImg" : "./imgs/work_parsons2.jpg",
+            "hashImg2" : "./imgs/work_parsons3.jpg",
+            "hashImg3" : "./imgs/work_parsons4.jpg",
+            "hashImg4" : "./imgs/work_parsons5.jpg",
+            "hashImg5" : "./imgs/work_parsons6.jpg"
         },
         {
             "type" : "portfolio",
@@ -59,12 +65,15 @@
             "workimgs" : "./imgs/work_portfolio2.jpg",
             "workimgs2" : "./imgs/work_portfolio3.jpg",
             "workimgs3" : "./imgs/work_portfolio4.jpg",
-            "workimgs4" : "./imgs/work_portfolio5.jpg",
-            "workimgs5" : "./imgs/work_portfolio6.jpg",
             "explanation2" : "디자인과 레이아웃이 간결하고 편안하게 느껴질 수 있도록 메인 페이지를 풀화면으로 설계하였습니다. 스와이프를 통해 다양한 비주얼 이미지를 보여주며 사용자의 니즈를 충족시켜줄 수 있도록 하였습니다. 스크롤 이펙트를 통해 부드러운 화면 전환을 주어 사용자에게 편안한 느낌을 주었습니다.",
             "explanation3" : "HTML5 / CSS3 / SCSS",
             "explanation3_1" : "Jquery / JavaScript / Json",
-            "explanation3_2" : "Photoshop / illustration"
+            "explanation3_2" : "Photoshop / illustration",
+            "hashImg" : "./imgs/work_portfolio2.jpg",
+            "hashImg2" : "./imgs/work_portfolio3.jpg",
+            "hashImg3" : "./imgs/work_portfolio4.jpg",
+            "hashImg4" : "./imgs/work_portfolio5.jpg",
+            "hashImg5" : "./imgs/work_portfolio6.jpg"
         }
     ]
 }

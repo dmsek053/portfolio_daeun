@@ -56,7 +56,7 @@ $(function(){
   // 스크롤 이벤트---------------------------------
   function niceScroll(){
     $('body').niceScroll({
-      scrollspeed: 100,
+      scrollspeed: 70,
       smoothscroll: true
     }); 
   }

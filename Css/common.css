@@ -8,7 +8,7 @@ ul,li{list-style: none; margin:0; padding:0;}
     box-sizing: border-box;
     font-family: 'Noto Sans';
     font-size: 10px;
-    color: #333333;
+    color: #333;
 }
 
 img{width:100%; vertical-align: top;}
@@ -163,23 +163,30 @@ a{text-decoration: none;}
     z-index: 950;
     width: 100%;
 }
+.kdelogo{
+  position: absolute;
+  left:5%; top:50px;
+  transform-origin: 50% 50%; transform: translate(-50%,-50%);
+  font-size: 2.5rem; font-weight: bold;
+}
 
 .burger {
     position: absolute;
     z-index: 10;
     right: 5%;
-    top: 40px;
+    top: 50px;
     cursor: pointer;
     transform: rotateY(0);
     transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
 }
 .burger__patty {
-    width: 40px;
-    height: 5px;
+    width: 35px;
+    height: 3px;
     margin: 0 0 7px 0;
-    background: #333333;
+    background: #333;
     border-radius: 50px;
-    transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
+    transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+    
 }
 .burger:hover .burger__patty{ background:#008cff;}
 .burger__patty:last-child {margin-bottom: 0;}
