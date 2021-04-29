@@ -175,7 +175,7 @@
           transform-origin: 100% 0%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  z-index: 999;
+  z-index: 900;
 }
 
 .main__uiux p {

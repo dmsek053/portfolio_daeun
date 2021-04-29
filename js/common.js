@@ -1,8 +1,10 @@
 $(function(){
 
   $(document).ready(function() {
-    $('.loading').delay(600).fadeOut(300);
+    $('.loading').delay(1000).fadeOut(300);
   });
+  
+
 
   $('header').load('inc.html header',init); 
 
