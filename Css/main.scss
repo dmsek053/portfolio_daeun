@@ -79,7 +79,7 @@ $fontE : 11rem;
     }
     p{ 
       display: inline-block; font-size:1.9rem;
-      background: linear-gradient(to top, #f4f6fa 25%, transparent 25%);
+      background: linear-gradient(to top, $gray 25%, transparent 25%);
     }
   }
 
@@ -198,6 +198,9 @@ $fontE : 11rem;
   &__img{
     position: absolute; width: 50%; transform-origin: 0% 50%; transform:translate(0%, -50%);
     top:50%; left:10%;
+    border-radius: 20px;
+    border: 1px solid $gray;
+    padding:10px;
     box-shadow: 0 30px 30px rgba(0,0,0,0.01), 0 10px 10px rgba(0, 0, 0, 0.11);  }
 }
 .sec1{

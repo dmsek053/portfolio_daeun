@@ -189,7 +189,7 @@ $spacing : -0.2px;
   &__fifth{
     position: fixed; z-index: 800;
     width: 100%; height:100vh;
-    background: #f4f6fa;
+    background: $white;
   }
 
   &__text{
@@ -206,9 +206,9 @@ $spacing : -0.2px;
   &__inner{
     position: fixed; z-index: 850;
     width: 100%; height:100vh;
-    background:$white;
+    background: #f4f6fa;
     h2{
-      font-size: 7rem; margin-bottom: 10px;
+      font-size: 5rem; margin-bottom: 10px;
       &::after{
         content: ''; display: inline-block;
         width: 40px; border-bottom: 2px solid $blue;
@@ -218,7 +218,7 @@ $spacing : -0.2px;
       }
     }
     p{
-      font-size:3rem;
+      font-size:2rem;
       &:nth-of-type(1){
         margin-bottom:50px;
       }
