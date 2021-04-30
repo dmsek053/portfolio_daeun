@@ -161,7 +161,11 @@ a{text-decoration: none;}
 .header {
     position: fixed;
     z-index: 999;
-    width: 100%;
+    width: 100%; margin-top: -100px; opacity: 0;
+    animation: headerAni 1s 2.5s forwards;
+}
+@keyframes headerAni {
+  100%{margin-top: 0px; opacity: 1;}
 }
 .kdelogo{
   position: absolute;

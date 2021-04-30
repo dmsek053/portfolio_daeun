@@ -68,7 +68,7 @@ $fontE : 11rem;
     transform: translate(-50%, -50%);
     text-align: center;
     letter-spacing: -0.1rem;
-    animation: firstAniH2 .5s 2s forwards;
+    animation: firstAniH2 1s 2s forwards;
     filter: blur(10px); opacity: 0;
     @keyframes firstAniH2{100%{filter:blur(0px);opacity:1}}
 
