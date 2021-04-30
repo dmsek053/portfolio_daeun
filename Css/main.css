@@ -15,7 +15,6 @@
   top: 0;
   left: 0;
   z-index: 500;
-  color: #008cff1f;
 }
 
 .main__first div {
@@ -37,8 +36,8 @@
   -webkit-transform: translate(-20%, 0%);
           transform: translate(-20%, 0%);
   opacity: 0;
-  -webkit-animation: firstAni 1s 1s forwards;
-          animation: firstAni 1s 1s forwards;
+  -webkit-animation: firstAni 1s 2s forwards;
+          animation: firstAni 1s 2s forwards;
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
@@ -67,8 +66,8 @@
   -webkit-transform: translate(20%, -30%);
           transform: translate(20%, -30%);
   opacity: 0;
-  -webkit-animation: firstAni2 1s 1s forwards;
-          animation: firstAni2 1s 1s forwards;
+  -webkit-animation: firstAni2 1s 2s forwards;
+          animation: firstAni2 1s 2s forwards;
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
@@ -97,8 +96,8 @@
   -webkit-transform: translate(-20%, -60%);
           transform: translate(-20%, -60%);
   opacity: 0;
-  -webkit-animation: firstAni3 1s 1s forwards;
-          animation: firstAni3 1s 1s forwards;
+  -webkit-animation: firstAni3 1s 2s forwards;
+          animation: firstAni3 1s 2s forwards;
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
@@ -496,8 +495,8 @@
     -webkit-transform: translate(-20%, 0%);
             transform: translate(-20%, 0%);
     opacity: 0;
-    -webkit-animation: firstAni 1s 1s forwards;
-            animation: firstAni 1s 1s forwards;
+    -webkit-animation: firstAni 1s 2s forwards;
+            animation: firstAni 1s 2s forwards;
     -webkit-filter: blur(10px);
             filter: blur(10px);
   }
@@ -523,8 +522,8 @@
     -webkit-transform: translate(20%, -30%);
             transform: translate(20%, -30%);
     opacity: 0;
-    -webkit-animation: firstAni2 1s 1s forwards;
-            animation: firstAni2 1s 1s forwards;
+    -webkit-animation: firstAni2 1s 2s forwards;
+            animation: firstAni2 1s 2s forwards;
     -webkit-filter: blur(10px);
             filter: blur(10px);
   }
@@ -550,8 +549,8 @@
     -webkit-transform: translate(-20%, -60%);
             transform: translate(-20%, -60%);
     opacity: 0;
-    -webkit-animation: firstAni3 1s 1s forwards;
-            animation: firstAni3 1s 1s forwards;
+    -webkit-animation: firstAni3 1s 2s forwards;
+            animation: firstAni3 1s 2s forwards;
     -webkit-filter: blur(10px);
             filter: blur(10px);
   }

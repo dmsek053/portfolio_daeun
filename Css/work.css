@@ -39,8 +39,8 @@
           filter: blur(50px);
   opacity: 0;
   font-weight: bold;
-  -webkit-animation: abouttitle 1s .3s forwards;
-          animation: abouttitle 1s .3s forwards;
+  -webkit-animation: abouttitle 1s 1.5s forwards;
+          animation: abouttitle 1s 1.5s forwards;
 }
 
 @-webkit-keyframes abouttitle {
@@ -80,8 +80,8 @@
   transition: .3s;
   -webkit-transform-origin: 50% 0%;
           transform-origin: 50% 0%;
-  -webkit-animation: abouttitle 1s .3s forwards;
-          animation: abouttitle 1s .3s forwards;
+  -webkit-animation: abouttitle 1s 1.5s forwards;
+          animation: abouttitle 1s 1.5s forwards;
   -webkit-filter: blur(50px);
           filter: blur(50px);
   opacity: 0;

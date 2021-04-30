@@ -41,7 +41,7 @@ $fontE : 13rem;
       p{
         font-size: 7rem; line-height: 1.1;
         filter: blur(50px); opacity: 0; font-weight: bold;
-        animation: abouttitle 1s .3s forwards;
+        animation: abouttitle 1s 1.5s forwards;
         @keyframes abouttitle{ 100% {filter: none; opacity: 1;} };
         &:nth-of-type(3){ font-weight: normal; font-size: $fontC; letter-spacing: 0; margin-top: 10px;}
       }
@@ -53,7 +53,7 @@ $fontE : 13rem;
     cursor: pointer;
     transform:rotate(-45deg); transition:.3s;
     transform-origin: 50% 0%;
-    animation: abouttitle 1s .3s forwards;
+    animation: abouttitle 1s 1.5s forwards;
     filter: blur(50px); opacity: 0;
     &:hover{transform:rotate(0deg);}
 

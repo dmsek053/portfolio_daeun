@@ -26,8 +26,8 @@
           filter: blur(50px);
   opacity: 0;
   font-weight: bold;
-  -webkit-animation: abouttitle 1s .3s forwards;
-          animation: abouttitle 1s .3s forwards;
+  -webkit-animation: abouttitle 1s 1.5s forwards;
+          animation: abouttitle 1s 1.5s forwards;
 }
 
 @-webkit-keyframes abouttitle {
@@ -56,8 +56,8 @@
   width: 0px;
   border-bottom: 2px solid #008cff;
   margin-left: 20px;
-  -webkit-animation: aboutafter .5s 1.3s forwards;
-          animation: aboutafter .5s 1.3s forwards;
+  -webkit-animation: aboutafter .5s 1.5s forwards;
+          animation: aboutafter .5s 1.5s forwards;
 }
 
 @-webkit-keyframes aboutafter {
@@ -375,8 +375,8 @@
   width: 40px;
   border-bottom: 2px solid #008cff;
   margin-left: 20px;
-  -webkit-animation: aboutafter2 1s infinite;
-          animation: aboutafter2 1s infinite;
+  -webkit-animation: aboutafter2 1s 1.5s infinite;
+          animation: aboutafter2 1s 1.5s infinite;
 }
 
 @-webkit-keyframes aboutafter2 {
@@ -438,8 +438,8 @@
             filter: blur(50px);
     opacity: 0;
     font-weight: bold;
-    -webkit-animation: abouttitle 1s .3s forwards;
-            animation: abouttitle 1s .3s forwards;
+    -webkit-animation: abouttitle 1s 1.5s forwards;
+            animation: abouttitle 1s 1.5s forwards;
   }
   @-webkit-keyframes abouttitle {
     100% {
@@ -464,8 +464,8 @@
     width: 0px;
     border-bottom: 2px solid #008cff;
     margin-left: 20px;
-    -webkit-animation: aboutafter .5s 1.3s forwards;
-            animation: aboutafter .5s 1.3s forwards;
+    -webkit-animation: aboutafter .5s 1.5s forwards;
+            animation: aboutafter .5s 1.5s forwards;
   }
   @-webkit-keyframes aboutafter {
     100% {
@@ -665,8 +665,8 @@
     width: 40px;
     border-bottom: 2px solid #008cff;
     margin-left: 20px;
-    -webkit-animation: aboutafter2 1s infinite;
-            animation: aboutafter2 1s infinite;
+    -webkit-animation: aboutafter2 1s 1.5s infinite;
+            animation: aboutafter2 1s 1.5s infinite;
   }
   @-webkit-keyframes aboutafter2 {
     100% {

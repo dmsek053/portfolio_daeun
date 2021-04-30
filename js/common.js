@@ -1,7 +1,7 @@
 $(function(){
 
   $(document).ready(function() {
-    $('.loading').delay(1000).fadeOut(300);  
+    $('.loading').delay(1500).fadeOut(300);  
   });
   
 
@@ -81,6 +81,20 @@ $(function(){
   // 미디어 쿼리  --------------------------------------------
   
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
