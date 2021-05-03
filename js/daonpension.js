@@ -96,6 +96,13 @@ $.ajax({
       $('main .hash__img').html(tagList8);
     }
     dataFun('daonpension');
+
+    // newtab-----------------------------------------
+    $('.explan__arrow, .img__move').on('click',function(){
+      window.open('https://dmsek053.github.io/daon/', '_blank');
+    });
+    // newtab-----------------------------------------
+
   }
 });
 

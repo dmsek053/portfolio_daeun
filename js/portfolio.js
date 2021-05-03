@@ -94,6 +94,13 @@ $(function(){
         $('main .hash__img').html(tagList8);
       }
       dataFun('portfolio');
+
+      // newtab-----------------------------------------
+      $('.explan__arrow, .img__move').on('click',function(){
+        window.open('https://dmsek053.github.io/portfolio_daeun/', '_blank');
+      });
+      // newtab-----------------------------------------
+      
     }
   });
   

@@ -94,6 +94,13 @@ $(function(){
         $('main .hash__img').html(tagList8);
       }
       dataFun('parsonsbranding');
+      
+      // newtab-----------------------------------------
+      $('.explan__arrow, .img__move').on('click',function(){
+        window.open('https://dmsek053.github.io/ParsonsBranding/', '_blank');
+      });
+      // newtab-----------------------------------------
+
     }
   });
   

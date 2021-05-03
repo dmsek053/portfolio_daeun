@@ -247,7 +247,7 @@ a{text-decoration: none;}
   left:30%;position: absolute;
 }
 .logo h2{
-  font-size: 3rem;
+  font-size: 5rem; padding-bottom: 20px;
 }
 .logo p{
   font-size: 3rem;

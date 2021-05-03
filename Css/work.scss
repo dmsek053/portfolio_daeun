@@ -153,6 +153,8 @@ $fontE : 13rem;
       background: $white;
   }
   &__move{
+      cursor: pointer;
+      &:hover img{filter:grayscale(0);}
       img{
         position: absolute;
         transform-origin: 0% 50%; transform:translate(0%,-50%);
@@ -161,6 +163,8 @@ $fontE : 13rem;
         border: 1px solid $gray;
         padding:10px;
         background:$white;
+        transition: .4s;
+        filter:grayscale(10);
   
         &:nth-of-type(1){
           width: 60%; left:20%; top:50%;
