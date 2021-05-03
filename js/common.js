@@ -5,9 +5,6 @@ $(function(){
   });
   
     
-  
-
-
   $('header').load('inc.html header',init); 
 
   function init(){
@@ -61,21 +58,12 @@ $(function(){
 
 
 
-  // 스크롤 이벤트---------------------------------
-  function niceScroll(){
-    $('body').niceScroll({
-      scrollspeed: 70,
-      smoothscroll: true
-    }); 
-  }
-  // 스크롤 이벤트---------------------------------
 
 
   // 미디어 쿼리  --------------------------------------------
   function matchEvent(e) {
     if (e.matches) {
       setTimeout(skrollr.init,500);
-      // setTimeout(niceScroll,500);
     } else {
     }
   }
