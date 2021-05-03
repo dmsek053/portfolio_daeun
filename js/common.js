@@ -4,6 +4,9 @@ $(function(){
     $('.loading').delay(1500).fadeOut(300);  
   });
   
+    
+  
+
 
   $('header').load('inc.html header',init); 
 
@@ -53,6 +56,11 @@ $(function(){
   // burger menu-----------------------------
 
 
+
+  
+
+
+
   // 스크롤 이벤트---------------------------------
   function niceScroll(){
     $('body').niceScroll({
@@ -66,8 +74,8 @@ $(function(){
   // 미디어 쿼리  --------------------------------------------
   function matchEvent(e) {
     if (e.matches) {
-      niceScroll();
-      skrollr.init();
+      setTimeout(skrollr.init,500);
+      // setTimeout(niceScroll,500);
     } else {
     }
   }
@@ -80,6 +88,8 @@ $(function(){
   clickList();
   // 미디어 쿼리  --------------------------------------------
   
+
+  
   }
 
 
@@ -89,9 +99,25 @@ $(function(){
 
 
 
+  
+$.ajax({
+  url:'data.json',
+  success:function(data){
+      data.gallery.forEach(function(value, key){
+        let img = new Image();
+        let img2 = new Image();
+        let img3 = new Image();
+        let img4 = new Image();
+        let img5 = new Image();          
 
-
-
+        img.src = value.hashImg;
+        img2.src = value.hashImg2;
+        img3.src = value.hashImg3;
+        img4.src = value.hashImg4;
+        img5.src = value.hashImg5;
+      });
+  }
+});
 
 
 

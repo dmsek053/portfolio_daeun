@@ -2,6 +2,8 @@ $(function(){
 
 $('main').load('inc.html main'); 
 
+
+
 $.ajax({
   url:'data.json',
   success:function(data){
