@@ -206,9 +206,9 @@ a{text-decoration: none;}
     transition: .5s;
 }
 
-.burger--close .burger__patty:nth-child(1) {transform: rotate(45deg) translate(8px, 8px);}
+.burger--close .burger__patty:nth-child(1) {transform: rotate(45deg) translate(7px, 7px);}
 .burger--close .burger__patty:nth-child(2) {opacity: 0;}
-.burger--close .burger__patty:nth-child(3) {transform: rotate(-45deg) translate(9px, -8px);}
+.burger--close .burger__patty:nth-child(3) {transform: rotate(-45deg) translate(8px, -7px);}
 
 .menu {
     position: fixed;
