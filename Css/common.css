@@ -243,27 +243,41 @@ a{text-decoration: none;}
     background: white;
     padding-top: 20%;
 }
+.menu__brand::after{
+  content: '';
+  width: 500px; height:500px;
+  border: 1px solid #e4e4e4; border-radius: 50%;
+  position: absolute; left:22%; top:25%;
+}
 .logo{
-  left:30%;position: absolute;
+  left:30%;position: absolute; top:40%;
 }
 .logo h2{
   font-size: 5rem; padding-bottom: 20px;
+  font-weight: normal; text-align: center;
 }
 .logo p{
-  font-size: 3rem;
+  font-size: 2.5rem; text-align: center;
 }
 .menu__brand--active {
     transform: translate3d(0, 0, 0);
     transition: .5s;
 }
 
-  
 .menu__item {
     transform: translate3d(650px, 0, 0);
     width:50%;
     opacity: 0;
     transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
     cursor: pointer;
+    padding-left: 130px;
+}
+.menu__item::before{
+  content: '';
+  width: 8px; height:8px;
+  background: #e4e4e4;
+  position: absolute; top:50%; left:20%;
+  border-radius: 50px;
 }
 .menu__item--active {
     transform: translate3d(0, 0, 0);
@@ -284,9 +298,11 @@ a{text-decoration: none;}
 .menu__link:hover{
     color: #008cff;
     transition: .5s;
+    text-decoration:line-through;
 }
 
 .menu__nav:hover{ transform: skew(15deg); }
+.menu__work:hover{ transform: skew(15deg); }
 
 .menu__work:hover span{
     transition:.5s;
